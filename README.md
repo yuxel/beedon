@@ -4,6 +4,16 @@ Content Management System Using PHP/MySQL
 
 First version, which I wrote at 2005 can be checked from [v1 branch](http://github.com/yuxel/beedon/tree/v1)
 
+
+# Planned Features
+
+1.  XHTML Transitional valid
+2.  Themable interface
+3.  Multilanguage interface
+4.  Code highligting
+5.  [pubsubhubhub](http://pubsubhubbub.appspot.com/) integration
+
+
 # TODO 
 
 1.  Model/View/Controller structure
