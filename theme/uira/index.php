@@ -1,0 +1,9 @@
+<?
+$block_temp_location="$theme_dir/template/blocks.html";
+$image_dir="$theme_dir/image/";
+$style_file="$theme_dir/style.css";
+$news_start_temp="$theme_dir/template/news/start.html";
+$news_show_id_temp="$theme_dir/template/news/show_id.html";
+$news_comment_temp="$theme_dir/template/news/show_comments.html";
+//
+?>

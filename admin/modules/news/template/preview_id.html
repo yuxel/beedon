@@ -1,0 +1,81 @@
+
+<table class="tablestyle_dotted" align="center" cellpadding="0"
+ cellspacing="3" width="95%">
+  <tbody>
+    <tr>
+      <td colspan="1"
+ style="font-size: 20px; font-weight: bold; font-family: Georgia,sans-serif; color: rgb(50, 53, 56);">#prev_header#</td>
+      <td style="text-align: right;"><img src="#prev_topic_logo#" alt=""></td>
+    </tr>
+    <tr>
+      <td colspan="2"
+ style="font-family: Verdana,sans-serif; font-size: 12px;">#prev_news#</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+      <hr class="hrstyle"></td>
+    </tr>
+    <tr
+ style="text-align: center; font-family: Verdana,Helvetica; font-size: 9px;">
+      <td style="text-align: left;"><small
+ style="color: rgb(153, 153, 153);"><small><big>#prev_day#.#prev_month_name#.#prev_year#
+:: #prev_dayname# :: #prev_hour#</big></small><span
+ style="color: rgb(153, 153, 153);"></span></small><small><small><big
+ style="color: rgb(102, 102, 102);"><span
+ style="color: rgb(153, 153, 153);"><br>
+      </span> </big></small></small></td>
+      <td style="text-align: right;"> <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<form name="add_news" method="post" action="">
+  <table class="tablestyle_double" align="center" cellpadding="2">
+    <tbody>
+      <tr style="text-align: left;">
+        <td><b>#sender#</b></td>
+        <td><input name="sender" value="#user#" type="hidden">#user#</td>
+        <td colspan="2"><br>
+        </td>
+      </tr>
+      <tr style="text-align: left;">
+        <td><b>#time#</b></td>
+        <td><input name="senddate" value="#date#" type="hidden">#prev_date#</td>
+        <td colspan="2"><br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">#header#</td>
+      </tr>
+      <tr>
+        <td colspan="4"><input name="nheader" value="#prev_header#"
+ type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="4">#topic#</td>
+      </tr>
+      <tr>
+        <td colspan="4">#list_topics#</td>
+      </tr>
+      <tr>
+        <td colspan="4">#news#</td>
+      </tr>
+      <tr>
+        <td colspan="4"><small>#allowed_tags#</small></td>
+      </tr>
+      <tr>
+        <td colspan="4"><textarea name="ncontent" rows="15" cols="40">#prev_news_textarea#</textarea></td>
+      </tr>
+      <tr>
+        <td colspan="4"><input
+ onclick="document.add_news.action='?module=admin&amp;a_module=news&amp;action=news&amp;effect=preview'; document.add_news.submit()"
+ class="submit_button" value="#preview_text#" type="submit"> <input
+ onclick="document.add_news.action='?module=admin&amp;a_module=news&amp;action=news&amp;effect=add_it'; document.add_news.submit()"
+ class="submit_button" value="#submit_text#" type="submit"> </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+

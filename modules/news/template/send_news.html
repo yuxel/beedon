@@ -1,0 +1,19 @@
+<form name="add_news" action="?module=news&amp;action=preview" method="post">
+<table class="tablestyle_double" align="center" cellpadding="2">
+<tr style="text-align:left;"><td><b>#sender#</b></td><td><input type="hidden" name="sender" value="#user#">#user_name#</td><td colspan="2"></td></tr>
+<tr style="text-align:left;"><td><b>#time#</b></td><td><input type="hidden" name="senddate" value="#date#">#date#</td><td colspan="2"></td></tr>
+<tr><td colspan="4">#header#</td></tr>
+<tr><td colspan="4"><input type="text" name="nheader"></td></tr>
+<tr><td colspan="4">#topic#</td></tr>
+<tr><td colspan="4">#list_topics#</td></tr>
+<tr><td colspan="4">#news#</td></tr>
+<tr><td colspan="4"><small>#allowed_tags#</small></td></tr>
+<tr><td colspan="4"><textarea name="ncontent" rows="15" cols="50"></textarea></td></tr>
+<tr><td colspan="4"><input
+ onclick="document.add_news.action='?module=news&amp;action=preview'; document.add_news.submit()"
+ class="submit_button" value="#preview_text#" type="submit"> <input
+ onclick="document.add_news.action='?module=news&amp;action=send_it'; document.add_news.submit()"
+ class="submit_button" value="#submit_text#" type="submit">
+</td></tr>
+</table> 
+</form>

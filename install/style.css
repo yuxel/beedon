@@ -1,0 +1,13 @@
+
+A:link          {COLOR: #454242; TEXT-DECORATION: none}
+A:active        {COLOR: #454242; TEXT-DECORATION: none}
+A:visited       {COLOR: #454242; TEXT-DECORATION: none}
+A:hover         {COLOR: #000000; TEXT-DECORATION: underline}
+A:link.beyaz 	{COLOR: #FFFFFF; TEXT-DECORATION: none}
+A:hover.beyaz 	{COLOR: #FFFFFF; TEXT-DECORATION: none}
+A:active.beyaz  {COLOR: #FFFFFF; TEXT-DECORATION: none}
+A:visited.beyaz {COLOR: #FFFFFF; TEXT-DECORATION: none}
+
+table.bee{
+border:1px dotted #BBB;
+} 

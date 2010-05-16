@@ -1,0 +1,11 @@
+<?
+//Veri tabani ayarlari 
+$dbhost="localhost";
+$dbname="beedb";
+$dbuser="root";
+$dbpass="";
+$dbprefix="bee_";
+//Yönetici ayarlarý
+$adminnick="YuXeL";
+$adminmail="yuxel@sonsuzdongu.com";
+?>

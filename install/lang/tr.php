@@ -1,0 +1,57 @@
+<?
+define("_lang_install_title",				"Beedon Kurulum");
+define("_lang_install_welcome",				"Beedon'a Hoþ Geldiniz!");
+define("_lang_install_info",				"Bu kurulum uygulamasý, Beedon için gerekli  veritabaný, yönetici ve sayfa ayarlarý gibi öntanýmlý ayarlarý oluþturmanýza yardým edecek.");
+define("_lang_install_lang_info",			"Lütfen kullanmak istediðiniz dili seçin");
+define("_lang_install_version",				"Sürüm");
+define("_lang_install_release_date",			"Sürüm tarihi");
+define("_lang_install_writeable",			"Ayar dizinine yazma hakkýnýz var");
+define("_lang_install_write_info",			"Beedon genel ayarlarý bir dosyada tutar. Kurulum uygulamasýnýn bu dosyayý oluþturabilmesi için ayar dizininin ve ayar dosyasýnýn yazýlabilir olmasý gerekmektedir");
+define("_lang_install_config_file",			"Ayar dosyasý");
+define("_lang_install_tmp_dir",				"Geçici klasör");
+define("_lang_install_write_error1",			"Ayar dizinine yazma izniniz bulunmuyor");
+define("_lang_install_write_error2",			"Ayar dosyasýna yazma izniniz bulunmuyor");
+define("_lang_install_retry",				"Yeniden dene");
+define("_lang_install_db_header",			"Veritabaný yapýlandýrmasý");
+define("_lang_install_info_text",			"Beedon verileri bir veritabanýna kaydeder, burada ilgili veritabanýna ait bilgileri girmeniz gerekiyor");
+define("_lang_install_host",				"Host/Yer");
+define("_lang_install_db_name",				"Veritabaný adý");
+define("_lang_install_user_name",			"Veritabaný kullanýcýsý");
+define("_lang_install_user_pass",			"Kullanýcý Þifres");
+define("_lang_install_prefix",				"Önek/prefix");
+define("_lang_install_submit",				"Gönder");
+define("_lang_install_connection_error",		"Veritabanýna baðlanýrken hata oluþtu");
+define("_lang_install_if_not_forward",			"Eðer yönlendirme iþlemi 2 saniye içinde gerçekleþmezse");
+define("_lang_install_click_here",			"buraya týklayýn");
+define("_lang_install_admin_header",			"Yönetici yapýlandýrmasý");
+define("_lang_install_admin_info",			"Burada site yöneticisi ile ilgili bilgileri girmeniz gerekiyor");
+define("_lang_install_nick",				"Rumuz");
+define("_lang_install_email",				"E-posta");
+define("_lang_install_pass",				"Þifre");
+define("_lang_install_passagain",			"Þifre tekrar");
+define("_lang_install_tmp_write_error",			"Geçici klasöre yazma izniniz bulunmuyor");
+define("_lang_install_tmp_write_success",		"Geçici klasöre yazma izniniz var");
+define("_lang_install_site_header",			"Site yapýlandýrmasý");
+define("_lang_install_info_site_conf",			"Bu bölümde sitede kullanýlacak genel ayarlarý belirlemeniz gerekli");
+define("_lang_title",					"Site Baþlýðý");
+define("_lang_install_slogan",				"Slogan");
+define("_lang_install_footer",				"Alt mesaj");
+define("_lang_install_charset",				"Karakter seti");
+define("_lang_install_startdate",			"Baþlangýç");
+define("_lang_install_default_theme",			"Öntanýmlý tema");
+define("_lang_install_default_language",		"Öntanýmlý dil");
+define("_lang_install_default_footer",			"Beedon, [url=http://www.gnu.org]GNU/GPL[/url] lisansý altýnda daðýtýlan ücretsiz bir içerik yönetim sistemidir.");
+define("_lang_install_prefix_error",			"Önek hatasý");
+define("_lang_install_prefix_error_info",		"Bu önek ile önceden bir kurulum yapýlmýþ veya bu önek ile beedon için gerekli bir tablo oluþturulmuþ. Lütfen öneki deðiþtirin");
+define("_lang_install_write_success",			"Ayarlarý dosyaya baþarýyla yazýldý");
+define("_lang_install_write_fail",			"Ayarlarý dosyaya yazarken bir hata oluþtu, ayar dosyasýna yazma izniniz olup olmadýðýný kontrol edin");
+define("_lang_install_table_create_ok",			"tablo baþarýyla oluþturuldu");
+define("_lang_install_table_create_error",		"tablo oluþturulurken hata oluþtu");
+define("_lang_install_finish",				"Kurulumu bitir");
+define("_lang_install_back",				"Geri dön");
+define("_lang_install_turnback_fix",			"Kurulumun devam etmesi için geri dönüp hatalarý gidermelisiniz");
+define("_lang_install_end",				"Kurulum baþarýyla tamamlandý, ana sayfaya yönlendiriliyorsunuz");
+define("_lang_install_about",				"Hakkýnda");
+
+
+?>

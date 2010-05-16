@@ -1,0 +1,5 @@
+<?
+define("_lang_menu_added",						"Menü öðesi eklendi");
+define("_lang_menu_deleted",						"Menü öðesi silindi");
+define("_lang_menu_updated",						"Menü öðesi güncellendi");
+?>

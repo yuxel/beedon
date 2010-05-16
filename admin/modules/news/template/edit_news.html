@@ -1,0 +1,17 @@
+<form name="add_news" action="?module=admin&amp;a_module=news&amp;action=news&amp;effect=update_preview" method="post">
+<table class="tablestyle_double" align="center" cellpadding="2">
+<tr style="text-align:left;"><td><b>#sender#</b></td><td><input type="hidden" name="id" value="#newsid#"><input type="hidden" name="sender" value="#user#">#user#</td><td colspan="2"></td></tr>
+<tr style="text-align:left;"><td><b>#time#</b></td><td><input type="hidden" name="senddate" value="#date#">#date#</td><td colspan="2"></td></tr>
+<tr style="text-align:left;"><td><b>#editor#</b></td><td><input type="hidden" name="editor" value="#geditor#">#geditor#</td><td colspan="2"></td></tr>
+<tr><td colspan="4">#header#</td></tr>
+<tr><td colspan="4"><input type="text" name="nheader" value="#gheader#"></td></tr>
+<tr><td colspan="4">#topic#</td></tr>
+<tr><td colspan="4">#list_topics#</td></tr>
+<tr><td colspan="4">#news#</td></tr>
+<tr><td colspan="4"><small>#allowed_tags#</small></td></tr>
+<tr><td colspan="4"><textarea name="ncontent" rows="20" cols="60">#gtext#</textarea></td></tr>
+<tr><td colspan="4"><input onclick="document.add_news.action='?module=admin&amp;a_module=news&amp;action=news&amp;effect=update_preview'; document.add_news.submit()" class="submit_button"  type="submit" value="#preview_text#">
+<input onclick="document.add_news.action='?module=admin&amp;a_module=news&amp;action=news&amp;effect=updateit'; document.add_news.submit()" class="submit_button"  type="submit" value="#submit_text#">
+</td></tr>
+</table> 
+</form>

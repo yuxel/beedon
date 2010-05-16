@@ -1,0 +1,17 @@
+<form action="?module=admin&amp;a_module=block&amp;action=own&amp;effect=update" method="post">
+#name#<br>
+<input type="hidden" name="blid" value="#blid#">
+<input type="text" name="name" value="#xname#"><br>
+#header#<br>
+<input type="text" name="header" value="#xheader#"><br>
+#blkcontent#<br>
+#allowed_tags#<br>
+<textarea rows=7 cols=20 name="blkcontent">#xcont#</textarea><br>
+#location# <select name="loc"><br>
+<option value="left" #txtlf#>#left#
+<option value="right" #txtrg#>#right#
+</select><br><br>
+#auth# #list_auth#<br><br>
+#active# <input type="checkbox" name="blkact" #chktext#> <br><br>
+<input class="submit_button" type="submit" value="#submit_text#"><br>
+</form> 

@@ -1,0 +1,57 @@
+<?
+define("_lang_install_title",				"Beedon Installation");
+define("_lang_install_welcome",				"Welcome to Beedon");
+define("_lang_install_info",				"This installation application will help you to setup an easy installation. You will be asked for database, admin and page details");
+define("_lang_install_lang_info",			"Select prefered language");
+define("_lang_install_version",				"Version");
+define("_lang_install_release_date",			"Release date");
+define("_lang_install_writeable",			"You ve write access on setup directory");
+define("_lang_install_write_info",			"Beedon, will store the general datas such as database details on a file. This application helps you to make this file. For this, you've write access on config dir");
+define("_lang_install_config_file",			"Condif file");
+define("_lang_install_tmp_dir",				"Temporary directory");
+define("_lang_install_write_error1",			"No write access on config dir");
+define("_lang_install_write_error2",			"No write access on config file");
+define("_lang_install_retry",				"Retry");
+define("_lang_install_db_header",			"Database configuration");
+define("_lang_install_info_text",			"Beedon, will store datas on a database. In this place you've to specify your database details");
+define("_lang_install_host",				"Host");
+define("_lang_install_db_name",				"Database name");
+define("_lang_install_user_name",			"Database user name");
+define("_lang_install_user_pass",			"User password");
+define("_lang_install_prefix",				"Prefix");
+define("_lang_install_submit",				"Send");
+define("_lang_install_connection_error",		"Error occured on connecting to database");
+define("_lang_install_if_not_forward",			"If not forwarded int 2 seconds");
+define("_lang_install_click_here",			"click here");
+define("_lang_install_admin_header",			"Admin configuration");
+define("_lang_install_admin_info",			"You've to specift admin details here");
+define("_lang_install_nick",				"Nick");
+define("_lang_install_email",				"E-mail");
+define("_lang_install_pass",				"Password");
+define("_lang_install_passagain",			"Password again");
+define("_lang_install_tmp_write_error",			"No write access on tmp dir");
+define("_lang_install_tmp_write_success",		"You've write access on tmp dir");
+define("_lang_install_site_header",			"Site configuration");
+define("_lang_install_info_site_conf",			"In this place, you will specify site details");
+define("_lang_title",					"Site Title");
+define("_lang_install_slogan",				"Slogan");
+define("_lang_install_footer",				"Footer message");
+define("_lang_install_charset",				"Charset");
+define("_lang_install_startdate",			"Start date");
+define("_lang_install_default_theme",			"Default Theme");
+define("_lang_install_default_language",		"Default Language");
+define("_lang_install_default_footer",			"Beedon, is a content management system, distributed under terms of [url=http://www.gnu.org]GNU/GPL[/url] license.");
+define("_lang_install_prefix_error",			"Prefix error");
+define("_lang_install_prefix_error_info",		"There will be an existing installation with this prefix or a table which beedon will use is created. Please change prefix");
+define("_lang_install_write_success",			"Configuration saved to file successfuly");
+define("_lang_install_write_fail",			"An error occured durding saving configuration to a file, Recheck that you've write access on config file");
+define("_lang_install_table_create_ok",			"table creation successful");
+define("_lang_install_table_create_error",		"error occured on table creation");
+define("_lang_install_finish",				"Finish installation");
+define("_lang_install_back",				"Go back");
+define("_lang_install_turnback_fix",			"To continue installation, you should go back and fix errors");
+define("_lang_install_end",				"Installation succeded, you'll be forwarded to main page");
+define("_lang_install_about",				"About");
+
+
+?>

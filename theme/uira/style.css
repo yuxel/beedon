@@ -1,0 +1,98 @@
+BODY { background-color: #FFFFFF }
+A:link          {COLOR: #454242; TEXT-DECORATION: none}
+A:active        {COLOR: #454242; TEXT-DECORATION: none}
+A:visited       {COLOR: #454242; TEXT-DECORATION: none}
+A:hover         {COLOR: #000000; TEXT-DECORATION: underline}
+A:link.beyaz 	{COLOR: #FFFFFF; TEXT-DECORATION: none}
+A:active.beyaz        {COLOR: #FFFFFF; TEXT-DECORATION: none}
+A:visited.beyaz       {COLOR: #FFFFFF; TEXT-DECORATION: none}
+
+A:link.ver_menu 	{FONT-SIZE: 13px; FONT-WEIGHT: bold; font-family: Georgia, Arial; COLOR: #666666; TEXT-DECORATION: none}
+A:active.ver_menu        {FONT-SIZE: 13px; FONT-WEIGHT: bold; font-family: Georgia, Arial; COLOR: #666666; TEXT-DECORATION: none}
+A:visited.ver_menu       {FONT-SIZE: 13px; FONT-WEIGHT: bold; font-family: Georgia, Arial; COLOR: #666666; TEXT-DECORATION: none}
+span.ver_menu {FONT-SIZE: 13px; FONT-WEIGHT: bold; font-family: Georgia, Arial; COLOR: #666666; TEXT-DECORATION: none}
+
+
+table.bee{
+border-style: dotted; 
+border-color: rgb(187, 187, 187); 
+border-width: 1px 1px 1px 1px; 
+} 
+
+img{
+border:none;
+}
+
+table.tablestyle{
+border-style: solid; 
+border-color: rgb(187, 187, 187); 
+border-width: 1px 3px 3px 1px; 
+line-height: normal; 
+margin-left: auto; 
+margin-right: auto; 
+}
+
+
+blockquote.code{
+overflow:auto; 
+background-color:#EAEBED;
+FONT-SIZE: 13px; 
+font-family: Georgia, Arial, Helvetica, Verdana; 
+}
+
+table.tablestyle_double{
+border-style: solid; 
+border-color: rgb(187, 187, 187); 
+border-width: 1px 1px 1px 1px; 
+margin-left: auto; 
+margin-right: auto; 
+text-align: center;
+}
+
+table.tablestyle_dotted{
+font-family: Verdana,Geneva,Arial,Helvetica;
+font-style: normal; font-variant: normal; 
+font-weight: normal; 
+font-size: 12px; 
+line-height: normal; 
+font-size-adjust: none; 
+font-stretch: normal;
+border-style: dotted; 
+border-color: rgb(187, 187, 187); 
+border-width: 1px 1px 1px 1px; 
+line-height: normal; 
+font-stretch: normal; 
+margin-left: auto; 
+margin-right: auto; 
+}
+
+.submit_button
+{
+border-style: solid; 
+border-color: #BBBBBB; 
+border-width: 1px 1px 1px 1px; 
+background-color: #FFFFFF;
+font-family: Arial, Helvetica, Verdana; 
+}
+
+hr.hrstyle{
+border-style: dotted; 
+border-color: rgb(187, 187, 187); 
+}
+
+
+td.left_blocks{
+width: 12%;
+vertical-align: top;
+
+}
+
+td.right_blocks{
+width: 12%;
+vertical-align: top;
+}
+
+
+td.write_modules{
+vertical-align: top;
+}
