@@ -1,12 +1,13 @@
 <?php
+/* vim: set expandtab sw=4 ts=4 sts=4: */
 
 /**
- * View configuration and implementation
+ * Smarty entegration
  */
 class View_Engines_Smarty extends System_SingletonAbstract implements System_ViewInterface{
 
     /**
-     * Set engine
+     * Set engine with default parameters
      */
     protected function __construct(){
 
@@ -49,6 +50,5 @@ class View_Engines_Smarty extends System_SingletonAbstract implements System_Vie
     function display($templateFile) {
         echo $this->fetch($templateFile);
     }
-
 
 }

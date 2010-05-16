@@ -1,5 +1,9 @@
 <?php
+/* vim: set expandtab sw=4 ts=4 sts=4: */
 
+/**
+ * Singleton Abstract class
+ */
 abstract class System_SingletonAbstract{
     private static $instance;
 
@@ -14,6 +18,4 @@ abstract class System_SingletonAbstract{
 
         return self::$instance;
     }
-
-
 }
