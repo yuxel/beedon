@@ -7,7 +7,7 @@
  * AutoLoad class' php files with this directory structure
  *
  *  Foo_Bar will include Foo/Bar.php
- *  Model_User will include Model/User.php
+ *  Model_Abraka_Dabra_Truba will include Model/Abraka/Dabra/Truba.php
  */
 function __autoload($className) {
     //exception for smarty
