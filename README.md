@@ -2,5 +2,9 @@
 
 Content Management System Using PHP/MySQL
 
-First version, which I wrote at 2005 can be checked from v1 branch
+Files at this branch was written at 2005 
+
+Lots of codes(variables) and comments are in Turkish language and this was my first public project
+
+Homepage : http://beedon.org
 
