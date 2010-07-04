@@ -14,15 +14,35 @@ class Bootstrap{
      * Init View
      */
     public function initView() {
-        $this->view = View::factory(Config_View::ENGINE);
+        $this->_view = View::factory(Config_View::ENGINE);
         return $this;
     }
 
+    /**
+     * get controller and run action from router
+     */
     public function initController(){
+        $router = new System_Router();
+        $actionArgs = null;
+        try{
+            $controllerAndAction = $router->getControllerAndAction();
+            $controller = $controllerAndAction["controller"];
+            $action     = $controllerAndAction["action"];
+        }
+        catch(Exception $e) {
+            $controller = new Controller_Error();
+            $action     = "showError";
+            $actionArgs = $e->getMessage();
+        }
+
+        $controller->setView($this->_view);
+        $controller->setRouter($router);
+
+        call_user_func(array($controller, $action), $actionArgs);
+
+        $controller->renderView();
+
         return $this;
     }
 
-    public function initUrlMapper() {
-        return $this;
-    }
-}
+} 

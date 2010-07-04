@@ -43,23 +43,26 @@ class AutoLoader{
      */
     function loadHandler($className){
 
-        /**
-         * Look for external resources and include source path 
-         */
+        $requirePath = null;
+
+        // Look for external resources and include source path 
         foreach((array)$this->_externalSources as $sourceName=>$sourcePath){
             if($className == $sourceName) {
-                require_once ($sourcePath);
-                return true;
+                $requirePath = $sourcePath;
             }
         }
 
-        /**
-         * explode class name and include file 
-         */
-        $namespaces = explode($this->_classSeparator,$className);
-        $filepath   = implode($this->_dirSeparator,$namespaces);
+        if(!$requirePath) {
+            // explode class name and include file 
+            $namespaces = explode($this->_classSeparator,$className);
+            $filepath   = implode($this->_dirSeparator,$namespaces);
+            $requirePath   = $filepath . $this->_extension;
+        }
 
-        require_once( $filepath. $this->_extension);
+
+        if( file_exists($requirePath)) {
+            require_once($requirePath);
+        }
     }
 
 

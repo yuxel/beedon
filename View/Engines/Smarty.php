@@ -17,7 +17,7 @@ class View_Engines_Smarty extends System_SingletonAbstract implements System_Vie
 
         //set template_dir, compile_dir and cache_dir
         $this->engine->template_dir = Config_View::THEME_DIR . DIRECTORY_SEPARATOR . Config_View::THEME;
-        $this->engine->compiled_dir = Config_View::COMPILE_DIR;
+        $this->engine->compile_dir = Config_View::COMPILE_DIR;
         $this->engine->cache_dir    = Config_View::CACHE_DIR;
 
     }

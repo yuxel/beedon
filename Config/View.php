@@ -6,8 +6,9 @@
  */
 class Config_View{
     const ENGINE      = "Smarty";
-    const COMPILE_DIR = "Template/_Compiled";
-    const CACHE_DIR   = "Template/_Cached";
-    const THEME_DIR   = "Template/Themes";
+    const COMPILE_DIR = "tmp/templates_c";
+    const CACHE_DIR   = "tmp/cache";
+    const THEME_DIR   = "Templates/";
     const THEME       = "default";
+    const EXTENSION   = ".ptl";
 }
