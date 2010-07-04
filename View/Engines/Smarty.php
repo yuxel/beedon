@@ -10,6 +10,8 @@ class View_Engines_Smarty extends System_SingletonAbstract implements System_Vie
      * Set engine with default parameters
      */
     protected function __construct(){
+        $autoLoader = AutoLoader::getInstance();
+        $autoLoader->addExternalSource("Smarty", "3rdParty/Smarty/libs/Smarty.class.php");
 
         $this->engine = new Smarty();
 

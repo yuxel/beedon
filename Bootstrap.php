@@ -10,7 +10,6 @@ class Bootstrap{
         return $this;
     }
 
-
     /**
      * Init View
      */
@@ -20,12 +19,10 @@ class Bootstrap{
     }
 
     public function initController(){
-
         return $this;
     }
 
     public function initUrlMapper() {
-
         return $this;
     }
 }

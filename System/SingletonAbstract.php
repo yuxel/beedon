@@ -5,17 +5,17 @@
  * Singleton Abstract class
  */
 abstract class System_SingletonAbstract{
-    private static $instance;
+    private static $_instance;
 
     abstract protected function __construct();
 
     public static function getInstance() 
     {
-        if (!isset(self::$instance)) {
+        if (!isset(self::$_instance)) {
             $thisClass = get_called_class();
-            self::$instance = new $thisClass;
+            self::$_instance = new $thisClass;
         }
 
-        return self::$instance;
+        return self::$_instance;
     }
 }
