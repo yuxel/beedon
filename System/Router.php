@@ -17,13 +17,10 @@ class System_Router{
      * Split uri by seperator and splitter
      */
     function _splitUri(){
-        $uriSeparator = Config_Application::URI_SEPARATOR;
-        $uriSplitter  = Config_Application::URI_SPLITTER;
+        $scriptName = str_replace(Config_Application::DEFAULT_FILE, "", $_SERVER['SCRIPT_NAME']);
+        $requestURI = str_replace($scriptName, "", $_SERVER['REQUEST_URI']);
 
-
-        if(isset($_GET[$uriSeparator])) {
-            $this->_splitted = explode($uriSplitter, $_GET[$uriSeparator]);
-        }
+        $this->_splitted = explode(Config_Application::URI_SPLITTER, $requestURI);
     }
 
     /**
@@ -80,11 +77,7 @@ class System_Router{
                 $uriParams[$key] = $value;
             }
 
-            //we dont want to see uri parameters to fetch _GET parameters
-            $uriRemovedGet = $_GET;
-            unset($uriRemovedGet[Config_Application::URI_SEPARATOR]);
-
-            $this->_parameters = array_merge((array)$uriParams, (array)$uriRemovedGet, (array)$_POST);
+            $this->_parameters = array_merge((array)$uriParams, (array)$_GET, (array)$_POST);
         }
         return $this->_parameters;
     }
