@@ -19,13 +19,13 @@ class Bootstrap{
     }
 
     /**
-     * get controller and run action from router
+     * get controller and run action from requestHandler
      */
     public function initController(){
-        $router = new System_Router();
+        $requestHandler = new System_RequestHandler();
         $actionArgs = null;
         try{
-            $controllerAndAction = $router->getControllerAndAction();
+            $controllerAndAction = $requestHandler->getControllerAndAction();
             $controller = $controllerAndAction["controller"];
             $action     = $controllerAndAction["action"];
         }
@@ -36,7 +36,7 @@ class Bootstrap{
         }
 
         $controller->setView($this->_view);
-        $controller->setRouter($router);
+        $controller->setRequestHandler($requestHandler);
 
         call_user_func(array($controller, $action), $actionArgs);
 

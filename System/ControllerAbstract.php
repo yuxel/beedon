@@ -15,17 +15,17 @@ abstract class System_ControllerAbstract{
     }
 
     /**
-     * set router to get parameters
+     * set requestHandler to get parameters
      */
-    function setRouter($router){
-        $this->router = $router;
+    function setRequestHandler($requestHandler){
+        $this->requestHandler = $requestHandler;
     }
 
     /**
-     * get all parameters from router
+     * get all parameters from requestHandler
      */
     function getParameters(){
-        return $this->router->getParameters();
+        return $this->requestHandler->getParameters();
 
     }
     
@@ -33,7 +33,7 @@ abstract class System_ControllerAbstract{
      * get a parameter with $key
      */
     function getParameter($key){
-        return $this->router->getParameter($key);
+        return $this->requestHandler->getParameter($key);
     }
 
 
@@ -45,8 +45,8 @@ abstract class System_ControllerAbstract{
         //users can assign _viewFile
         //if so render _viewFile
         if(!$this->_viewFile){
-            $controller = $this->router->getController();
-            $action     = $this->router->getAction();
+            $controller = $this->requestHandler->getController();
+            $action     = $this->requestHandler->getAction();
             $seprator   = DIRECTORY_SEPARATOR;
             $file = $controller . $seprator . $action;
         }

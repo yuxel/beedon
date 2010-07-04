@@ -2,9 +2,9 @@
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 
 /**
- * Router 
+ * Request handler
  */
-class System_Router{
+class System_RequestHandler{
     
     private $_splitted;
     private $_parameters;
@@ -15,12 +15,20 @@ class System_Router{
 
     /**
      * Split uri by seperator and splitter
+     * @see http://www.phpaddiction.com/tags/axial/url-routing-with-php-part-one/
      */
     function _splitUri(){
-        $scriptName = str_replace(Config_Application::DEFAULT_FILE, "", $_SERVER['SCRIPT_NAME']);
-        $requestURI = str_replace($scriptName, "", $_SERVER['REQUEST_URI']);
+        $requestURI = explode('/', $_SERVER['REQUEST_URI']);
+        $scriptName = explode('/',$_SERVER['SCRIPT_NAME']);
 
-        $this->_splitted = explode(Config_Application::URI_SPLITTER, $requestURI);
+        for($i= 0;$i < sizeof($scriptName);$i++) {
+            if ($requestURI[$i]     == $scriptName[$i]) {
+                unset($requestURI[$i]);
+            }
+        }
+
+        $this->_splitted = array_values($requestURI);
+
     }
 
     /**
@@ -108,11 +116,11 @@ class System_Router{
         if(class_exists($controllerClass)) {
             $controllerObject = new $controllerClass;
             if(!is_callable(array($controllerObject, $actionMethod))){
-                throw new Exception("Router :: Action not found");
+                throw new Exception(__CLASS__ ." :: Action '$action' not found");
             }
         }
         else{
-            throw new Exception("Router :: Controller not found");
+            throw new Exception(__CLASS__ . " :: Controller '$controller' not found");
         }
 
         return array("controller"=>$controllerObject,
