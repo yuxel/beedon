@@ -40,6 +40,13 @@ class View_Engines_Smarty extends System_SingletonAbstract implements System_Vie
      * @param string $templateFile
      */
     function fetch($templateFile) {
+
+        $fullPath = $this->engine->template_dir. DIRECTORY_SEPARATOR .$templateFile;
+
+        if( !file_exists($fullPath) ) {
+            throw new Exception("View :: template file $templateFile doesn't exists");
+        }
+
         return $this->engine->fetch($templateFile);
     }
 
@@ -51,6 +58,14 @@ class View_Engines_Smarty extends System_SingletonAbstract implements System_Vie
      */
     function display($templateFile) {
         echo $this->fetch($templateFile);
+    }
+
+
+    /**
+     * Return templates path
+     */
+    function getTemplatesDir(){
+        return $this->engine->template_dir;
     }
 
 }

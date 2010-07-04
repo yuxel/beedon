@@ -21,4 +21,9 @@ interface System_ViewInterface
      * output date on fetched template
      */
     public function display($template);
+
+    /**
+     * return template dir path
+     */
+    public function getTemplatesDir();
 }

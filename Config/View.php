@@ -8,7 +8,7 @@ class Config_View{
     const ENGINE      = "Smarty";
     const COMPILE_DIR = "tmp/templates_c";
     const CACHE_DIR   = "tmp/cache";
-    const THEME_DIR   = "Templates/";
+    const THEME_DIR   = "Templates";
     const THEME       = "default";
     const EXTENSION   = ".ptl";
 }
