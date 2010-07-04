@@ -18,7 +18,11 @@ class System_RequestHandler{
      * @see http://www.phpaddiction.com/tags/axial/url-routing-with-php-part-one/
      */
     function _splitUri(){
-        $requestURI = explode('/', $_SERVER['REQUEST_URI']);
+
+        $requestURIWithoutGet = explode("?",$_SERVER['REQUEST_URI']);
+        $requestURIWithoutGet = rtrim($requestURIWithoutGet[0],"/");
+        $requestURI = explode('/', trim($requestURIWithoutGet));
+
         $scriptName = explode('/',$_SERVER['SCRIPT_NAME']);
 
         for($i= 0;$i < sizeof($scriptName);$i++) {
