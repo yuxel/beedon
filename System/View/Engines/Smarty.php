@@ -10,7 +10,7 @@ class System_View_Engines_Smarty extends System_Common_Singleton_Abstract implem
      * Set engine with default parameters
      */
     protected function __construct(){
-        $autoLoader = AutoLoader::getInstance();
+        $autoLoader = System_AutoLoader::getInstance();
         $autoLoader->addExternalSource("Smarty", "3rdParty/Smarty/libs/Smarty.class.php");
 
         $this->engine = new Smarty();

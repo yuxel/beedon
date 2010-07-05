@@ -4,7 +4,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors",true);
 
-include_once("AutoLoader.php");
+include_once("System/AutoLoader.php");
 
 $bootstrap = new System_Bootstrap();
 

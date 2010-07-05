@@ -10,7 +10,7 @@
  *  Model_Abraka_Dabra_Truba will include Model/Abraka/Dabra/Truba.php
  */
 
-class AutoLoader{
+class System_AutoLoader{
 
     private static $_instance;
     private $_externalSources = array();
@@ -81,4 +81,4 @@ class AutoLoader{
     }
 }
 
-$autoLoader = AutoLoader::getInstance();
+$autoLoader = System_AutoLoader::getInstance();
