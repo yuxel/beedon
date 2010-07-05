@@ -11,5 +11,5 @@ class Config_View{
     const CACHE_DIR   = "tmp/cache";
     const THEME_DIR   = "Templates";
     const THEME       = "default";
-    const EXTENSION   = ".ptl";
+    const EXTENSION   = ".tpl";
 }
