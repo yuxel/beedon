@@ -6,7 +6,15 @@
  */
 class Beedon_Bootstrap{
 
+    private $_view;
+
+    private $_model;
+
+    /**
+     * Init model 
+     */
     public function initModel() {
+        $this->_model = Beedon_Model::factory(Config_Model::ENGINE);
         return $this;
     }
 
@@ -35,6 +43,7 @@ class Beedon_Bootstrap{
             $actionArgs = $e->getMessage();
         }
 
+        $controller->setModel($this->_model);
         $controller->setView($this->_view);
         $controller->setRequestHandler($requestHandler);
 

@@ -4,7 +4,10 @@
 error_reporting(E_ALL);
 ini_set("display_errors",true);
 
+define("APP_PATH", dirname(__FILE__));
+
 include_once("Beedon/AutoLoader.php");
+
 
 $bootstrap = new Beedon_Bootstrap();
 

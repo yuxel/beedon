@@ -15,6 +15,14 @@ abstract class Beedon_Controller_Abstract{
     }
 
     /**
+     * Set model accessible in controller
+     */
+    function setModel($model){
+        $this->model = $model;
+    }
+
+
+    /**
      * set requestHandler to get parameters
      */
     function setRequestHandler($requestHandler){
