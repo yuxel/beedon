@@ -4,15 +4,15 @@
 /**
  * Factory class to set view engine
  */
-class System_View{
+class Beedon_View{
 
     /**
      * Load related engine
      *
-     * @param System_ViewInterface $viewEngine
+     * @param Beedon_View_Interface $viewEngine
      */
     public static function factory($viewEngine) {
-        $engineClass = "System_View_Engines_$viewEngine";
+        $engineClass = "Beedon_View_Engines_$viewEngine";
         return $engineClass::getInstance();
     }
 

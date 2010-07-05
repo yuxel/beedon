@@ -4,7 +4,7 @@
 /**
  * init Model/View and Controller
  */
-class System_Bootstrap{
+class Beedon_Bootstrap{
 
     public function initModel() {
         return $this;
@@ -14,7 +14,7 @@ class System_Bootstrap{
      * Init View
      */
     public function initView() {
-        $this->_view = System_View::factory(Config_View::ENGINE);
+        $this->_view = Beedon_View::factory(Config_View::ENGINE);
         return $this;
     }
 
@@ -22,7 +22,7 @@ class System_Bootstrap{
      * get controller and run action from requestHandler
      */
     public function initController(){
-        $requestHandler = new System_RequestHandler();
+        $requestHandler = new Beedon_RequestHandler();
         $actionArgs = null;
         try{
             $controllerAndAction = $requestHandler->getControllerAndAction();

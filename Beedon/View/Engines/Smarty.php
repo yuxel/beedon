@@ -4,14 +4,15 @@
 /**
  * Smarty entegration
  */
-class System_View_Engines_Smarty extends System_Common_Singleton_Abstract implements System_View_Interface{
+class Beedon_View_Engines_Smarty extends 
+        Beedon_Common_Singleton_Abstract implements Beedon_View_Interface{
 
     /**
      * Set engine with default parameters
      */
     protected function __construct(){
-        $autoLoader = System_AutoLoader::getInstance();
-        $autoLoader->addExternalSource("Smarty", "System/3rdParty/Smarty/libs/Smarty.class.php");
+        $autoLoader = Beedon_AutoLoader::getInstance();
+        $autoLoader->addExternalSource("Smarty", "Beedon/3rdParty/Smarty/libs/Smarty.class.php");
 
         $this->engine = new Smarty();
 

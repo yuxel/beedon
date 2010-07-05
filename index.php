@@ -4,9 +4,9 @@
 error_reporting(E_ALL);
 ini_set("display_errors",true);
 
-include_once("System/AutoLoader.php");
+include_once("Beedon/AutoLoader.php");
 
-$bootstrap = new System_Bootstrap();
+$bootstrap = new Beedon_Bootstrap();
 
 $bootstrap->initModel()
           ->initView()
