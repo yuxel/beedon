@@ -6,7 +6,7 @@ ini_set("display_errors",true);
 
 include_once("AutoLoader.php");
 
-$bootstrap = new Bootstrap();
+$bootstrap = new System_Bootstrap();
 
 $bootstrap->initModel()
           ->initView()

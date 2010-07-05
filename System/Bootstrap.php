@@ -4,7 +4,7 @@
 /**
  * init Model/View and Controller
  */
-class Bootstrap{
+class System_Bootstrap{
 
     public function initModel() {
         return $this;
