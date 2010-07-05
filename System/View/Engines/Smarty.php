@@ -4,7 +4,7 @@
 /**
  * Smarty entegration
  */
-class View_Engines_Smarty extends System_SingletonAbstract implements System_ViewInterface{
+class System_View_Engines_Smarty extends System_Common_Singleton_Abstract implements System_View_Interface{
 
     /**
      * Set engine with default parameters

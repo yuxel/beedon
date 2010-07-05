@@ -5,7 +5,7 @@
  * View Interface for Beedon
  *
  */
-interface System_ViewInterface
+interface System_View_Interface
 {
     /**
      * Fetch template data with assigned variables

@@ -4,7 +4,7 @@
 /**
  * Factory class to set view engine
  */
-class View{
+class System_View{
 
     /**
      * Load related engine
@@ -12,7 +12,7 @@ class View{
      * @param System_ViewInterface $viewEngine
      */
     public static function factory($viewEngine) {
-        $engineClass = "View_Engines_$viewEngine";
+        $engineClass = "System_View_Engines_$viewEngine";
         return $engineClass::getInstance();
     }
 

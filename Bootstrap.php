@@ -14,7 +14,7 @@ class Bootstrap{
      * Init View
      */
     public function initView() {
-        $this->_view = View::factory(Config_View::ENGINE);
+        $this->_view = System_View::factory(Config_View::ENGINE);
         return $this;
     }
 
