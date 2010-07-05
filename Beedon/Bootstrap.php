@@ -22,7 +22,7 @@ class Beedon_Bootstrap{
      * get controller and run action from requestHandler
      */
     public function initController(){
-        $requestHandler = new Beedon_RequestHandler();
+        $requestHandler = new Beedon_Request_Handler();
         $actionArgs = null;
         try{
             $controllerAndAction = $requestHandler->getControllerAndAction();
