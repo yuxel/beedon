@@ -12,7 +12,7 @@ class Beedon_View_Engines_Smarty extends
      */
     protected function __construct(){
         $autoLoader = Beedon_AutoLoader::getInstance();
-        $autoLoader->addExternalSource("Smarty", "Beedon/3rdParty/Smarty/libs/Smarty.class.php");
+        $autoLoader->addExternalSource("Smarty", Config_View::ENGINE_PATH);
 
         $this->engine = new Smarty();
 
