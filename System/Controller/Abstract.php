@@ -4,7 +4,7 @@
 /**
  * Abstract class for Controllers
  */
-abstract class System_ControllerAbstract{
+abstract class System_Controller_Abstract{
     private $_viewFile = null;
 
     /**

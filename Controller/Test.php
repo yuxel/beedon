@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Test extends System_ControllerAbstract{
+class Controller_Test extends System_Controller_Abstract{
     //this will run when called test/index
     function index(){
         $parameters = $this->getParameters();

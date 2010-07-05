@@ -26,8 +26,10 @@ class System_RequestHandler{
         $scriptName = explode('/',$_SERVER['SCRIPT_NAME']);
 
         for($i= 0;$i < sizeof($scriptName);$i++) {
-            if ($requestURI[$i]     == $scriptName[$i]) {
-                unset($requestURI[$i]);
+            if( isset($requestURI[$i]) ) {
+                if ($requestURI[$i] == $scriptName[$i]) {
+                    unset($requestURI[$i]);
+                }
             }
         }
 
