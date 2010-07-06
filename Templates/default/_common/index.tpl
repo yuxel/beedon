@@ -16,6 +16,9 @@
             body {
                 background:#FFFFFF url('/github/beedon/Templates/default/_static/img/bg.jpg') repeat-x 0 164px;
                 height:100%;
+                font-family:Verdana,Arial,Geneva,Helvetica,sans-serif;
+                font-size:12px;
+                line-height:20px;
             }
 
             .sprite {
@@ -27,56 +30,68 @@
             }
 
             #header {
-                background-position:0 0;
+                background-position:center 0;
                 height:164px;
+                padding:0 2px;
             }
 
             #pageWrapper {
                 margin:0 auto;
-                width:1182px;
+                background-position:center -161px;
             }
 
             #pageCenter {
-                margin-left:2px;
-                width:788px;
+                width:960px;
                 background:#FFFFFF;
                 min-height:615px;
                 height:auto !important;
                 height:615px;
+                margin:0 auto;
 
             }
 
-
-            .pageWings {
-                width:196px;
-                min-height:615px;
-                height:auto !important;
-                height:615px;
-            }
-
-            #pageLeft{
-                background-position:-353px -234px;
-            }
-
-
-            #pageRight{
-                background-position:-589px -234px;
-            }
 
             .toLeft {
                 float:left;
             }
+
+            .toRight {
+                float:right;
+            }
+
 
             .clear {
                 clear:both;
             }
 
             .marginCentered{
-                width:790px;
+                width:960px;
                 margin:0 auto;
             }
 
+            #sloganWrapper {
+                float:right;
+                margin:10px 160px 0 0; 
+                width:300px;
+                height:40px;
+            }
             
+            #navWrapper{
+                float:right;
+            }
+
+            #navbar {
+                border:1px solid blue;
+                margin:70px 10px 0 0 ;
+                height:25px;
+                width:650px;
+
+            }
+
+            #navbar li{
+                float:left;
+            }
+
         </style>
         {/literal}
 
@@ -85,18 +100,38 @@
         <div id="headerWrapper">
             <div id="header" class="sprite marginCentered">
                 <header>
-                    <nav>
-                        <ul id="navbar">
-                            <li></li>
-                        </ul> <!-- #navbar -->
-                    </nav>
+                    <div id="sloganWrapper">
+                        <section id="sloganSection">
+                            Cant stop learning!
+                        </section>
+                    </div> <!-- #slogan -->
+                    <div class="clear"></div>
+
+                    <div id="navWrapper">
+                        <nav>
+                            <ul id="navbar">
+                                <li> 
+                                    <a href="#">
+                                        Link1
+                                    </a>
+                                </li>
+
+                                <li> 
+                                    <a href="#">
+                                        Link2
+                                    </a>
+                                </li>
+
+
+                            </ul> <!-- #navbar -->
+                        </nav>
+                    </div> <!-- #navWrapper-->
                 </header>
             </div> <!-- #header -->
         </div> <!-- #headerWrapper -->
 
-        <div id="pageWrapper" class="marginCentered">
-            <div id="pageLeft" class="sprite toLeft pageWings"></div>
-            <div id="pageCenter" class="marginCentered toLeft">
+        <div id="pageWrapper" class="sprite">
+            <div id="pageCenter">
                 <div id="main">     
                     Burası ana içerik
                 </div> <!-- #main -->
@@ -111,7 +146,6 @@
                 </div> <!-- #asideWrapper-->
 
             </div> <!-- #page -->
-            <div id="pageRight" class="sprite toLeft pageWings"></div>
             <div class="clear"></div>
         </div> <!-- #pageWrapper-->
         
