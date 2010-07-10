@@ -205,46 +205,60 @@
             }
         
             .article .header {
-                margin-top:20px;
-                padding:10px 3px;
-                background:#f1f1f1;
-                border-bottom:2px solid #cecece;
-                height:25px;
+                margin-top:30px;
+                background:transparent url('/github/beedon/Templates/default/_static/img/leftCaption.png') no-repeat 0 0;
+                height:31px;
+                padding-bottom:7px;
+                margin-left:-22px;
             }
 
             .article .header a {
                 text-decoration: none;
             }
 
+            .article .header .headerBg {
+                float:left;
+                background:#f1f1f1;
+                width:655px;
+                height:31px;
+                line-height:31px;
+
+            }        
+
             .article .header h1 {
+                height:31px;
+                line-height:31px;
+                background:#f1f1f1;
+                background:transparent;
                 color:#4E4E4E;
-                text-shadow:1px 1px 1px #FFFFFF;
+                text-shadow:0px 0px 4px #777777;
                 font-size:18px;
                 float:left;
+                display:block;
+                padding-left:10px;
             }
             
             .article .header .dateTime {
-                float:right;
-                background-position:-100px 0;
+                float:left;
                 font-weight:bold;
+                width:107px;
+                color:#FFFFFF;
+                text-shadow: 2px 2px 3px black;
+                text-align:center;
+                line-height:31px;
             }
 
             .article .header .dateTime .month{
-                padding-top:10px;
-                display:block;
             }
             .article .header .dateTime .day{
-                padding-top:10px;
-                display:block;
             }
 
 
             .article .header .comments{
-                padding-top:10px;
                 float:right;
                 font-size:20px;
                 font-weight:bold;
-                padding-top:18px;
+                padding-top:14px;
             }
 
             .article .header .comments .commentText{
@@ -345,19 +359,21 @@
                     <div class="article">
                         <article>
                             <div class="header">
+                               <div class="dateTime">
+                                    <span class="month">May</span>
+                                    <span class="day">13</span>
+                                </div><!-- .dateTime -->
                                 <a href="#">
-                                    <h1>Smarty Integration to Zend Framework</h1>
+                                   <div class="headerBg">
+                                        <h1>Smarty Integration to Zend Framework</h1>
 
-                                    <div class="dateTime articleSprite">
-                                        <span class="month">May</span>
-                                        <span class="day">13</span>
-                                    </div><!-- .dateTime -->
-
-                                    <div class="comments articleSprite">
-                                        <span class="commentCount">13</span>
-                                        <span class="commentText">Comments</span>
-                                    </div>
-                                    <div class="clear"></div>
+                                        <div class="comments articleSprite">
+                                            <span class="commentCount">13</span>
+                                            <span class="commentText">Comments</span>
+                                        </div>
+                                    </div><!-- .headerBg -->
+                                    <div class="clear"></div
+>
                                 </a>
                             </div> <!-- .header -->
 
