@@ -120,8 +120,9 @@
             }
 
             #main {
-                width:750px;
+                width:740px;
                 float:left;
+                padding:0 5px;
             }
 
             #asideWrapper{
@@ -149,6 +150,82 @@
                 text-align:center;
                 border-bottom:1px dotted #FFF;
 
+            }
+
+            .article {
+                font-family:Helvetica;
+                color:#1e1e1e;
+            }
+        
+            .article .header {
+                margin-top:20px;
+                padding:10px 3px;
+                background:#f1f1f1;
+                border-bottom:2px solid #cecece;
+                height:25px;
+            }
+
+            .article .header a {
+                text-decoration: none;
+            }
+
+            .article .header h1 {
+                color:#4E4E4E;
+                text-shadow:1px 1px 1px #FFFFFF;
+                font-size:18px;
+                float:left;
+            }
+            
+            .article .header .dateTime {
+                float:right;
+                background-position:-100px 0;
+                font-weight:bold;
+            }
+
+            .article .header .dateTime .month{
+                padding-top:10px;
+                display:block;
+            }
+            .article .header .dateTime .day{
+                padding-top:10px;
+                display:block;
+            }
+
+
+            .article .header .comments{
+                padding-top:10px;
+                float:right;
+                font-size:20px;
+                font-weight:bold;
+                padding-top:18px;
+            }
+
+            .article .header .comments .commentText{
+                text-indent : 99999px;
+                display:block;
+            }
+ 
+
+
+            .articleSprite {
+                background:url('/github/beedon/Templates/default/_static/img/articleSprite.png') no-repeat 0 0;
+                width:100px;
+                text-align:center;
+                margin-top:-45px;
+                color:#444444;
+                font-size:18px;
+                padding-bottom:20px;
+            }
+
+
+            .article .content {
+                text-align:justify;
+                line-height:20px;
+                padding-bottom:20px;
+            }
+
+            .article .content img {
+                padding:3px 10px 3px 0;
             }
 
         </style>
@@ -215,43 +292,53 @@
         <div id="pageWrapper" class="sprite">
             <div id="pageCenter">
                 <div id="main">     
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
-                    Main content comes here <br/>
+
+                    {section name=foo start=1 loop=4 step=1}
+
+                    <div class="article">
+                        <article>
+                            <div class="header">
+                                <a href="#">
+                                    <h1>Smarty Integration to Zend Framework</h1>
+
+                                    <div class="dateTime articleSprite">
+                                        <span class="month">May</span>
+                                        <span class="day">13</span>
+                                    </div><!-- .dateTime -->
+
+                                    <div class="comments articleSprite">
+                                        <span class="commentCount">13</span>
+                                        <span class="commentText">Comments</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </div> <!-- .header -->
+
+                            <div class="content">
+                                <img src="http://thehoopshaven.com/wp-content/uploads/2009/12/Kobe-game-winning-shot.jpg" alt="" style="float:left"/>
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electroni
+                                ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electroni
+                                ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                            </div> <!-- .content -->
+
+
+                        </article>
+                    </div> <!-- .article -->
+                {/section}
                 </div> <!-- #main -->
 
                 <div id="asideWrapper">
