@@ -3,7 +3,11 @@
     <head>
         <title>Title</title>
         <meta charset="utf-8" />
+
+        <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular|Tangerine:regular,bold|Lobster:regular" rel="stylesheet" type="text/css" >
+
         <link rel="stylesheet" href="/github/beedon/Templates/default/_static/css/reset.css" media="screen" type="text/css" />
+
 
         <meta name="description" content="Personal webspace and resume of Ed Wheeler, a Web/Graphic Designer and HTML/CSS Developer." />
         <meta name="keywords" content="web designer, graphic designer, html, xhtml, css, developer, portfolio, resume, Ed Wheeler" />
@@ -74,6 +78,14 @@
                 margin:10px 160px 0 0; 
                 width:300px;
                 height:40px;
+                text-align:center;
+                font-weight:bold;
+                text-shadow: 1px 1px #999;
+                font-size:18px;
+                font-family: 'lobster', serif;
+                letter-spacing: 0.3em;
+                color:#000;
+                line-height:40px;
             }
             
             #navWrapper{
@@ -90,6 +102,16 @@
 
             #navbar li{
                 float:left;
+                margin-right:10px;
+            }
+
+            #navbar li a {
+                text-shadow: 1px 1px #999;
+                font-size:18px;
+                font-family: 'Reenie Beanie', serif;
+                letter-spacing: 0.3em;
+                color:#000;
+                line-height:40px;
             }
 
         </style>
@@ -102,7 +124,7 @@
                 <header>
                     <div id="sloganWrapper">
                         <section id="sloganSection">
-                            Cant stop learning!
+                            Can't stop learning!
                         </section>
                     </div> <!-- #slogan -->
                     <div class="clear"></div>
