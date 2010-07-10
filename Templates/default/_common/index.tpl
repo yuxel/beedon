@@ -101,7 +101,7 @@
 
             #navbar li{
                 float:left;
-                margin-right:14px;
+                margin-right:24px;
             }
 
             #navbar li a {
@@ -111,7 +111,7 @@
                 font-family: 'lobster', serif;
                 letter-spacing: 5px;
                 color:#000;
-                font-weight:bolder;
+                font-weight:400;
             }
 
             #navbar li a:hover {
