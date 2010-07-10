@@ -4,10 +4,10 @@
         <title>Title</title>
         <meta charset="utf-8" />
 
-        <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie|Tangerine|Lobster" rel="stylesheet" type="text/css" >
 
         <link rel="stylesheet" href="/github/beedon/Templates/default/_static/css/reset.css" media="screen" type="text/css" />
 
+        <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie|Tangerine|Lobster" rel="stylesheet" type="text/css" >
 
         <meta name="description" content="Personal webspace and resume of Ed Wheeler, a Web/Graphic Designer and HTML/CSS Developer." />
         <meta name="keywords" content="web designer, graphic designer, html, xhtml, css, developer, portfolio, resume, Ed Wheeler" />
@@ -47,9 +47,9 @@
             #pageCenter {
                 width:960px;
                 background:#FFFFFF;
-                min-height:515px;
+                min-height:615px;
                 height:auto !important;
-                height:515px;
+                height:615px;
                 margin:0 auto;
 
             }
@@ -82,7 +82,7 @@
                 font-weight:bold;
                 text-shadow: 1px 1px #999;
                 font-size:18px;
-                font-family: 'lobster', serif;
+                font-family: 'Reenie Beanie', serif;
                 letter-spacing: 0.3em;
                 color:#000;
                 line-height:40px;
@@ -96,19 +96,20 @@
                 margin:70px 10px 0 0 ;
                 height:25px;
                 width:650px;
+                white-space:nowrap;
             }
 
             #navbar li{
                 float:left;
-                margin-right:35px;
+                margin-right:14px;
             }
 
             #navbar li a {
                 text-decoration:none;
                 text-shadow: 1px 1px #999;
                 font-size:18px;
-                font-family: 'Reenie Beanie', serif;
-                letter-spacing: 0.3em;
+                font-family: 'lobster', serif;
+                letter-spacing: 5px;
                 color:#000;
                 font-weight:bolder;
             }
@@ -121,7 +122,6 @@
             #main {
                 width:750px;
                 float:left;
-                padding-bottom:127px;
             }
 
             #asideWrapper{
@@ -129,19 +129,23 @@
                 float:right;
             }
 
-            #footerWrapper{
-                margin-top:-127px;
-                padding-top:127px;
-                background:#090b0a url('/github/beedon/Templates/default/_static/img/footer.jpg') no-repeat 0 0;
-                color:white;
+
+            #footerTop{
+                padding-top:119px;
+                background:#FFFFFF url('/github/beedon/Templates/default/_static/img/footer.jpg') no-repeat center 0;
             }
 
-            #footerWrapper .footerSide {
+            #footerWrapper{
+                color:white;
+                background:#090b0a;
+            }
+
+            #footer .footerSide {
                 width:300px;
                 margin:0 10px;
             }
 
-            #footerWrapper .footerSide h3 {
+            #footer .footerSide h3 {
                 text-align:center;
                 border-bottom:1px dotted #FFF;
 
@@ -226,6 +230,28 @@
                     Main content comes here <br/>
                     Main content comes here <br/>
                     Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
                 </div> <!-- #main -->
 
                 <div id="asideWrapper">
@@ -239,41 +265,46 @@
             </div> <!-- #page -->
             <div class="clear"></div>
         </div> <!-- #pageWrapper-->
-        
-        <div id="footerWrapper" class="marginCentered">
-            <footer>    
-                <div class="footerSide toLeft">    
-                    <aside>
-                        <h3>Behind the site</h3>
-                        <span>
-                            Some text about site
-                        </span>
-                    </aside>
-                </div>
+       
+    
+        <div id="footerTop" class="marginCentered"></div>
 
-                <div class="footerSide toLeft">    
-                    <aside>
-                        <h3>Some good sites</h3>
-                        <span>
-                            Some text other sites
-                        </span>
+        <div id="footerWrapper" >
+            <div id="footer" class="marginCentered">
+                <footer>    
+                    <div class="footerSide toLeft">    
+                        <aside>
+                            <h3>Behind the site</h3>
+                            <span>
+                                Some text about site
+                            </span>
+                        </aside>
+                    </div>
 
-                    </aside>
-                </div>
+                    <div class="footerSide toLeft">    
+                        <aside>
+                            <h3>Some good sites</h3>
+                            <span>
+                                Some text other sites
+                            </span>
+
+                        </aside>
+                    </div>
 
 
-                <div class="footerSide toRight">    
-                    <aside>
-                        <h3>About author</h3>
-                        <span>
-                            Some text about author
-                        </span>
+                    <div class="footerSide toRight">    
+                        <aside>
+                            <h3>About author</h3>
+                            <span>
+                                Some text about author
+                            </span>
 
-                    </aside>
-                </div>
-                <div class="clear"></div>
-            </footer>
-        </div>
+                        </aside>
+                    </div>
+                    <div class="clear"></div>
+                </footer>
+            </div> <!-- #footer -->
+        </div> <!-- #footerWrapper -->
     </body>
 </html>
 
