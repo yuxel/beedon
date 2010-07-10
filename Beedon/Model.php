@@ -12,7 +12,7 @@ class Beedon_Model{
      */
     public static function factory($modelEngine) {
         $model = "Beedon_Model_Engines_$modelEngine";
-        return $model;
+        return new $model;
     }
 
 }

@@ -77,8 +77,13 @@ class Beedon_AutoLoader{
      * Register autoloader handler
      */
     function _register(){
-        spl_autoload_register(array($this, "loadHandler"));
+        $this->addNewHandler(array($this, "loadHandler"));
     }
+
+    function addNewHandler($handler){
+        spl_autoload_register($handler);
+    }
+
 }
 
 $autoLoader = Beedon_AutoLoader::getInstance();

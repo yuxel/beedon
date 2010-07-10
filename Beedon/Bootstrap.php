@@ -15,6 +15,7 @@ class Beedon_Bootstrap{
      */
     public function initModel() {
         $this->_model = Beedon_Model::factory(Config_Model::ENGINE);
+        //$this->_model->generateFromTable();
         return $this;
     }
 
