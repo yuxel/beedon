@@ -4,6 +4,53 @@
         <title>Title</title>
         <meta charset="utf-8" />
 
+        {literal}
+        <style type="text/css">
+
+            @font-face {
+              font-family: 'EastMarket';
+              font-style: normal;
+              font-weight: normal;
+              src: local('EastMarket'), url('/github/beedon/Templates/default/_static/fonts/EastMarket-webfont.ttf') format('truetype');
+            }
+
+            @font-face {
+              font-family: 'Florli';
+              font-style: normal;
+              font-weight: normal;
+              src: local('Florli'), url('/github/beedon/Templates/default/_static/fonts/Florli-webfont.ttf') format('truetype');
+            }
+
+            @font-face {
+              font-family: 'Florlrg';
+              font-style: normal;
+              font-weight: normal;
+              src: local('Florlrg'), url('/github/beedon/Templates/default/_static/fonts/Florlrg-webfont.ttf') format('truetype');
+            }
+
+
+            @font-face {
+              font-family: 'HollaScript';
+              font-style: normal;
+              font-weight: normal;
+              src: local('HollaScript'), url('/github/beedon/Templates/default/_static/fonts/HollaScript-webfont.ttf') format('truetype');
+            }
+
+
+            @font-face {
+              font-family: 'Mothproof';
+              font-style: normal;
+              font-weight: normal;
+              src: local('Mothproof'), url('/github/beedon/Templates/default/_static/fonts/Mothproof-webfont.ttf') format('truetype');
+            }
+
+
+
+
+
+
+        </style>
+        {/literal}
 
         <link rel="stylesheet" href="/github/beedon/Templates/default/_static/css/reset.css" media="screen" type="text/css" />
 
@@ -81,8 +128,8 @@
                 text-align:center;
                 font-weight:bold;
                 text-shadow: 1px 1px #999;
-                font-size:18px;
-                font-family: 'Reenie Beanie', serif;
+                font-size:16px;
+                font-family: 'Mothproof', serif;
                 letter-spacing: 0.3em;
                 color:#000;
                 line-height:40px;
