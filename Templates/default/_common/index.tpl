@@ -4,7 +4,7 @@
         <title>Title</title>
         <meta charset="utf-8" />
 
-        <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular|Tangerine:regular,bold|Lobster:regular" rel="stylesheet" type="text/css" >
+        <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie|Tangerine|Lobster" rel="stylesheet" type="text/css" >
 
         <link rel="stylesheet" href="/github/beedon/Templates/default/_static/css/reset.css" media="screen" type="text/css" />
 
@@ -47,9 +47,9 @@
             #pageCenter {
                 width:960px;
                 background:#FFFFFF;
-                min-height:615px;
+                min-height:515px;
                 height:auto !important;
-                height:615px;
+                height:515px;
                 margin:0 auto;
 
             }
@@ -93,25 +93,58 @@
             }
 
             #navbar {
-                border:1px solid blue;
                 margin:70px 10px 0 0 ;
                 height:25px;
                 width:650px;
-
             }
 
             #navbar li{
                 float:left;
-                margin-right:10px;
+                margin-right:35px;
             }
 
             #navbar li a {
+                text-decoration:none;
                 text-shadow: 1px 1px #999;
                 font-size:18px;
                 font-family: 'Reenie Beanie', serif;
                 letter-spacing: 0.3em;
                 color:#000;
-                line-height:40px;
+                font-weight:bolder;
+            }
+
+            #navbar li a:hover {
+                color:#11b00f;
+                text-shadow: 1px 1px #11b00f;
+            }
+
+            #main {
+                width:750px;
+                float:left;
+                padding-bottom:127px;
+            }
+
+            #asideWrapper{
+                width:200px;
+                float:right;
+            }
+
+            #footerWrapper{
+                margin-top:-127px;
+                padding-top:127px;
+                background:#090b0a url('/github/beedon/Templates/default/_static/img/footer.jpg') no-repeat 0 0;
+                color:white;
+            }
+
+            #footerWrapper .footerSide {
+                width:300px;
+                margin:0 10px;
+            }
+
+            #footerWrapper .footerSide h3 {
+                text-align:center;
+                border-bottom:1px dotted #FFF;
+
             }
 
         </style>
@@ -134,16 +167,39 @@
                             <ul id="navbar">
                                 <li> 
                                     <a href="#">
-                                        Link1
+                                        Blog
                                     </a>
                                 </li>
 
                                 <li> 
                                     <a href="#">
-                                        Link2
+                                        Documents
                                     </a>
                                 </li>
 
+                                <li> 
+                                    <a href="#">
+                                        About
+                                    </a>
+                                </li>
+
+                                <li> 
+                                    <a href="#">
+                                        Projects
+                                    </a>
+                                </li>
+
+                                <li> 
+                                    <a href="#">
+                                        Gallery
+                                    </a>
+                                </li>
+
+                                <li> 
+                                    <a href="#">
+                                        Contact
+                                    </a>
+                                </li>
 
                             </ul> <!-- #navbar -->
                         </nav>
@@ -155,14 +211,27 @@
         <div id="pageWrapper" class="sprite">
             <div id="pageCenter">
                 <div id="main">     
-                    Burası ana içerik
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
+                    Main content comes here <br/>
                 </div> <!-- #main -->
 
                 <div id="asideWrapper">
                     <aside>
-
-                        <section id="resume-dl">
-                            Burası sag taraftaki bir blok
+                        <section id="rightBlock">
+                            Right block
                         </section>    
                     </aside>
                 </div> <!-- #asideWrapper-->
@@ -171,9 +240,38 @@
             <div class="clear"></div>
         </div> <!-- #pageWrapper-->
         
-        <div id="footer-wrapper" class="marginCentered">
-            <footer>        
-                Burası footer
+        <div id="footerWrapper" class="marginCentered">
+            <footer>    
+                <div class="footerSide toLeft">    
+                    <aside>
+                        <h3>Behind the site</h3>
+                        <span>
+                            Some text about site
+                        </span>
+                    </aside>
+                </div>
+
+                <div class="footerSide toLeft">    
+                    <aside>
+                        <h3>Some good sites</h3>
+                        <span>
+                            Some text other sites
+                        </span>
+
+                    </aside>
+                </div>
+
+
+                <div class="footerSide toRight">    
+                    <aside>
+                        <h3>About author</h3>
+                        <span>
+                            Some text about author
+                        </span>
+
+                    </aside>
+                </div>
+                <div class="clear"></div>
             </footer>
         </div>
     </body>
