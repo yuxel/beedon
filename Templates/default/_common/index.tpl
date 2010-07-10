@@ -64,6 +64,7 @@
 
         {literal}
         <style type="text/css">
+
             body {
                 background:#FFFFFF url('/github/beedon/Templates/default/_static/img/bg.jpg') repeat-x 0 164px;
                 height:100%;
@@ -92,6 +93,8 @@
             }
 
             #pageCenter {
+                border-left:1px solid #BBB;
+                border-right:1px solid #BBB;
                 width:960px;
                 background:#FFFFFF;
                 min-height:615px;
@@ -181,6 +184,9 @@
             #footerTop{
                 padding-top:119px;
                 background:#FFFFFF url('/github/beedon/Templates/default/_static/img/footer.jpg') no-repeat center 0;
+                border-left:1px solid #BBB;
+                border-right:1px solid #BBB;
+ 
             }
 
             #footerWrapper{
@@ -248,13 +254,8 @@
                 line-height:31px;
             }
 
-            .article .header .dateTime .month{
-            }
-            .article .header .dateTime .day{
-            }
-
-
             .article .header .comments{
+                height:38px;
                 float:right;
                 font-size:20px;
                 font-weight:bold;
@@ -262,8 +263,7 @@
             }
 
             .article .header .comments .commentText{
-                text-indent : 99999px;
-                display:block;
+                display:none;
             }
  
 
@@ -372,8 +372,7 @@
                                             <span class="commentText">Comments</span>
                                         </div>
                                     </div><!-- .headerBg -->
-                                    <div class="clear"></div
->
+                                    <div class="clear"></div>
                                 </a>
                             </div> <!-- .header -->
 
@@ -411,8 +410,8 @@
                         </section>    
                     </aside>
                 </div> <!-- #asideWrapper-->
-
-            </div> <!-- #page -->
+                <div class="clear"></div>
+            </div> <!-- #pageCenter -->
             <div class="clear"></div>
         </div> <!-- #pageWrapper-->
        
