@@ -93,8 +93,8 @@
             }
 
             #pageCenter {
-                border-left:1px solid #BBB;
-                border-right:1px solid #BBB;
+                border-left:2px solid #ddd;
+                border-right:2px solid #ddd;
                 width:960px;
                 background:#FFFFFF;
                 min-height:615px;
@@ -175,17 +175,33 @@
                 padding:0 5px;
             }
 
-            #asideWrapper{
+            #sidebar{
                 width:200px;
                 float:right;
+            }
+
+            #sidebar .section {
+                margin-bottom:15px;
+            }
+
+            #sidebar .section h3 {
+                color:red;
+                background:transparent url('/github/beedon/Templates/default/_static/img/sideBar.png') no-repeat right 0;
+                display:block;
+                width:199px;
+                height:41px;
+                line-height:30px;
+                padding-left:9px;
+                color:#FFFFFF;
+                text-shadow: 2px 2px 3px #000000;
             }
 
 
             #footerTop{
                 padding-top:119px;
                 background:#FFFFFF url('/github/beedon/Templates/default/_static/img/footer.jpg') no-repeat center 0;
-                border-left:1px solid #BBB;
-                border-right:1px solid #BBB;
+                border-left:2px solid #ddd;
+                border-right:2px solid #ddd;
  
             }
 
@@ -396,11 +412,23 @@
                     {/section}
                     </div> <!-- #main -->
 
-                    <aside id="asideWrapper">
-                        <section id="rightBlock">
-                            Right block
+                    <aside id="sidebar">
+                        <section id="search" class="section">
+                            <h3>Search</h3>
+                            <span>
+                                Right block <br/>
+                            </span>
                         </section>    
-                    </aside> <!-- #asideWrapper -->
+
+                        <section id="search" class="section">
+                            <h3>Search</h3>
+                            <span>
+                                Right block
+                            </span>
+                        </section>    
+
+
+                    </aside> <!-- #sidebar -->
 
                     <div class="clear"></div>
                 </div> <!-- #pageCenter -->
