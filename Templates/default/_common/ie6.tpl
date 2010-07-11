@@ -44,6 +44,11 @@
               src: local('Mothproof'), url('/github/beedon/Templates/default/_static/fonts/Mothproof-webfont.ttf') format('truetype');
             }
 
+
+
+
+
+
         </style>
         {/literal}
 
@@ -55,15 +60,10 @@
         <meta name="keywords" content="web designer, graphic designer, html, xhtml, css, developer, portfolio, resume, Ed Wheeler" />
         <meta name="robots" content="all, index, follow" />
 
-        <script src="/github/beedon/Templates/default/_static/js/html5.js"></script>
         <script src="http://cdn.jquerytools.org/1.2.3/jquery.tools.min.js"></script>
 
         {literal}
         <style type="text/css">
-
-            header, nav, article, footer, section, figure {  
-                    display: block;  
-            }  
 
             body {
                 background:#FFFFFF url('/github/beedon/Templates/default/_static/img/bg.jpg') repeat-x 0 164px;
@@ -295,54 +295,59 @@
     </head>
     <body>
         <div id="headerWrapper">
-            <header id="header" class="sprite marginCentered">
-                <section id="sloganWrapper">
-                    Can't stop learning!
-                </section>
-                <div class="clear"></div>
+            <div id="header" class="sprite marginCentered">
+                <header>
+                    <div id="sloganWrapper">
+                        <section id="sloganSection">
+                            Can't stop learning!
+                        </section>
+                    </div> <!-- #slogan -->
+                    <div class="clear"></div>
 
-                <nav id="navWrapper">
-                    <ul id="navbar">
-                        <li> 
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
+                    <div id="navWrapper">
+                        <nav>
+                            <ul id="navbar">
+                                <li> 
+                                    <a href="#">
+                                        Blog
+                                    </a>
+                                </li>
 
-                        <li> 
-                            <a href="#">
-                                Documents
-                            </a>
-                        </li>
+                                <li> 
+                                    <a href="#">
+                                        Documents
+                                    </a>
+                                </li>
 
-                        <li> 
-                            <a href="#">
-                                About
-                            </a>
-                        </li>
+                                <li> 
+                                    <a href="#">
+                                        About
+                                    </a>
+                                </li>
 
-                        <li> 
-                            <a href="#">
-                                Projects
-                            </a>
-                        </li>
+                                <li> 
+                                    <a href="#">
+                                        Projects
+                                    </a>
+                                </li>
 
-                        <li> 
-                            <a href="#">
-                                Gallery
-                            </a>
-                        </li>
+                                <li> 
+                                    <a href="#">
+                                        Gallery
+                                    </a>
+                                </li>
 
-                        <li> 
-                            <a href="#">
-                                Contact
-                            </a>
-                        </li>
+                                <li> 
+                                    <a href="#">
+                                        Contact
+                                    </a>
+                                </li>
 
-                    </ul> <!-- #navbar -->
-                </nav> <!-- #navWrapper-->
-
-            </header> <! -- #header -->
+                            </ul> <!-- #navbar -->
+                        </nav>
+                    </div> <!-- #navWrapper-->
+                </header>
+            </div> <!-- #header -->
         </div> <!-- #headerWrapper -->
 
         <div id="pageWrapper" class="sprite">
@@ -351,57 +356,60 @@
 
                     {section name=foo start=1 loop=4 step=1}
 
-                    <article class="article">
-                        <div class="header">
-                           <div class="dateTime">
-                                <span class="month">May</span>
-                                <span class="day">13</span>
-                            </div><!-- .dateTime -->
-                            <a href="#">
-                               <div class="headerBg">
-                                    <h1>Smarty Integration to Zend Framework</h1>
+                    <div class="article">
+                        <article>
+                            <div class="header">
+                               <div class="dateTime">
+                                    <span class="month">May</span>
+                                    <span class="day">13</span>
+                                </div><!-- .dateTime -->
+                                <a href="#">
+                                   <div class="headerBg">
+                                        <h1>Smarty Integration to Zend Framework</h1>
 
-                                    <div class="comments articleSprite">
-                                        <span class="commentCount">13</span>
-                                        <span class="commentText">Comments</span>
-                                    </div>
-                                </div><!-- .headerBg -->
-                                <div class="clear"></div>
-                            </a>
-                        </div> <!-- .header -->
+                                        <div class="comments articleSprite">
+                                            <span class="commentCount">13</span>
+                                            <span class="commentText">Comments</span>
+                                        </div>
+                                    </div><!-- .headerBg -->
+                                    <div class="clear"></div>
+                                </a>
+                            </div> <!-- .header -->
 
-                        <div class="content">
-                            <img src="http://thehoopshaven.com/wp-content/uploads/2009/12/Kobe-game-winning-shot.jpg" alt="" style="float:left"/>
+                            <div class="content">
+                                <img src="http://thehoopshaven.com/wp-content/uploads/2009/12/Kobe-game-winning-shot.jpg" alt="" style="float:left"/>
 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s, when an unknown printer took 
-                            a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electroni
-                            ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                            of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s, when an unknown printer took 
-                            a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electroni
-                            ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                            of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electroni
+                                ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electroni
+                                ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                        </div> <!-- .content -->
+                            </div> <!-- .content -->
 
 
-                    </article> <!-- article -->
+                        </article>
+                    </div> <!-- .article -->
                 {/section}
                 </div> <!-- #main -->
 
-                <aside id="asideWrapper">
-                    <section id="rightBlock">
-                        Right block
-                    </section>    
-                </aside> <!-- #asideWrapper -->
-
+                <div id="asideWrapper">
+                    <aside>
+                        <section id="rightBlock">
+                            Right block
+                        </section>    
+                    </aside>
+                </div> <!-- #asideWrapper-->
                 <div class="clear"></div>
             </div> <!-- #pageCenter -->
             <div class="clear"></div>
@@ -411,36 +419,40 @@
         <div id="footerTop" class="marginCentered"></div>
 
         <div id="footerWrapper" >
-            <footer id="footer" class="marginCentered">
+            <div id="footer" class="marginCentered">
+                <footer>    
+                    <div class="footerSide toLeft">    
+                        <aside>
+                            <h3>Behind the site</h3>
+                            <span>
+                                Some text about site
+                            </span>
+                        </aside>
+                    </div>
 
-                <aside class="footerSide toLeft">    
+                    <div class="footerSide toLeft">    
+                        <aside>
+                            <h3>Some good sites</h3>
+                            <span>
+                                Some text other sites
+                            </span>
 
-                    <h3>Behind the site</h3>
-                    <span>
-                        Some text about site
-                    </span>
-                </aside>
-
-                <aside class="footerSide toLeft">
-                    <h3>Some good sites</h3>
-                    <span>
-                        Some text other sites
-                    </span>
-
-                </aside>
+                        </aside>
+                    </div>
 
 
-                <aside class="footerSide toRight">    
+                    <div class="footerSide toRight">    
+                        <aside>
+                            <h3>About author</h3>
+                            <span>
+                                Some text about author
+                            </span>
 
-                    <h3>About author</h3>
-                    <span>
-                        Some text about author
-                    </span>
-
-                </aside>
-
-                <div class="clear"></div>
-            </footer> <! -- #footer -->
+                        </aside>
+                    </div>
+                    <div class="clear"></div>
+                </footer>
+            </div> <!-- #footer -->
         </div> <!-- #footerWrapper -->
     </body>
 </html>
