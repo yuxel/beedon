@@ -342,105 +342,105 @@
                     </ul> <!-- #navbar -->
                 </nav> <!-- #navWrapper-->
 
-            </header> <! -- #header -->
+            </header> <!-- #header -->
         </div> <!-- #headerWrapper -->
 
-        <div id="pageWrapper" class="sprite">
-            <div id="pageCenter">
-                <div id="main">     
+            <div id="pageWrapper" class="sprite">
+                <div id="pageCenter">
+                    <div id="main">     
 
-                    {section name=foo start=1 loop=4 step=1}
+                        {section name=foo start=1 loop=4 step=1}
 
-                    <article class="article">
-                        <div class="header">
-                           <div class="dateTime">
-                                <span class="month">May</span>
-                                <span class="day">13</span>
-                            </div><!-- .dateTime -->
-                            <a href="#">
-                               <div class="headerBg">
-                                    <h1>Smarty Integration to Zend Framework</h1>
+                        <article class="article">
+                            <div class="header">
+                               <div class="dateTime">
+                                    <span class="month">May</span>
+                                    <span class="day">13</span>
+                                </div><!-- .dateTime -->
+                                <a href="#">
+                                   <div class="headerBg">
+                                        <h1>Smarty Integration to Zend Framework</h1>
 
-                                    <div class="comments articleSprite">
-                                        <span class="commentCount">13</span>
-                                        <span class="commentText">Comments</span>
-                                    </div>
-                                </div><!-- .headerBg -->
-                                <div class="clear"></div>
-                            </a>
-                        </div> <!-- .header -->
+                                        <div class="comments articleSprite">
+                                            <span class="commentCount">13</span>
+                                            <span class="commentText">Comments</span>
+                                        </div>
+                                    </div><!-- .headerBg -->
+                                    <div class="clear"></div>
+                                </a>
+                            </div> <!-- .header -->
 
-                        <div class="content">
-                            <img src="http://thehoopshaven.com/wp-content/uploads/2009/12/Kobe-game-winning-shot.jpg" alt="" style="float:left"/>
+                            <div class="content">
+                                <img src="http://thehoopshaven.com/wp-content/uploads/2009/12/Kobe-game-winning-shot.jpg" alt="" style="float:left"/>
 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s, when an unknown printer took 
-                            a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electroni
-                            ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                            of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s, when an unknown printer took 
-                            a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electroni
-                            ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                            of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electroni
+                                ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electroni
+                                ypesettine, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                        </div> <!-- .content -->
+                            </div> <!-- .content -->
 
 
-                    </article> <!-- article -->
-                {/section}
-                </div> <!-- #main -->
+                        </article> <!-- article -->
+                    {/section}
+                    </div> <!-- #main -->
 
-                <aside id="asideWrapper">
-                    <section id="rightBlock">
-                        Right block
-                    </section>    
-                </aside> <!-- #asideWrapper -->
+                    <aside id="asideWrapper">
+                        <section id="rightBlock">
+                            Right block
+                        </section>    
+                    </aside> <!-- #asideWrapper -->
 
+                    <div class="clear"></div>
+                </div> <!-- #pageCenter -->
                 <div class="clear"></div>
-            </div> <!-- #pageCenter -->
-            <div class="clear"></div>
-        </div> <!-- #pageWrapper-->
-       
-    
-        <div id="footerTop" class="marginCentered"></div>
+            </div> <!-- #pageWrapper-->
+           
+        
+            <div id="footerTop" class="marginCentered"></div>
 
-        <div id="footerWrapper" >
-            <footer id="footer" class="marginCentered">
+            <div id="footerWrapper" >
+                <footer id="footer" class="marginCentered">
 
-                <aside class="footerSide toLeft">    
+                    <aside class="footerSide toLeft">    
 
-                    <h3>Behind the site</h3>
-                    <span>
-                        Some text about site
-                    </span>
-                </aside>
+                        <h3>Behind the site</h3>
+                        <span>
+                            Some text about site
+                        </span>
+                    </aside>
 
-                <aside class="footerSide toLeft">
-                    <h3>Some good sites</h3>
-                    <span>
-                        Some text other sites
-                    </span>
+                    <aside class="footerSide toLeft">
+                        <h3>Some good sites</h3>
+                        <span>
+                            Some text other sites
+                        </span>
 
-                </aside>
+                    </aside>
 
 
-                <aside class="footerSide toRight">    
+                    <aside class="footerSide toRight">    
 
-                    <h3>About author</h3>
-                    <span>
-                        Some text about author
-                    </span>
+                        <h3>About author</h3>
+                        <span>
+                            Some text about author
+                        </span>
 
-                </aside>
+                    </aside>
 
-                <div class="clear"></div>
-            </footer> <! -- #footer -->
+                    <div class="clear"></div>
+                </footer> <!-- #footer -->
         </div> <!-- #footerWrapper -->
     </body>
 </html>
