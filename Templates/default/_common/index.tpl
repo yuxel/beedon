@@ -129,12 +129,11 @@
                 width:300px;
                 height:40px;
                 text-align:center;
-                font-weight:bold;
-                text-shadow: 1px 1px #999;
+                text-shadow: 1px 1px #EEE;
                 font-size:16px;
-                font-family: 'Mothproof', serif;
+                font-family: 'EastMarket', 'Lobster', serif;
                 letter-spacing: 0.3em;
-                color:#000;
+                color:433333;
                 line-height:40px;
             }
             
@@ -151,22 +150,22 @@
 
             #navbar li{
                 float:left;
-                margin-right:24px;
+                margin-right:18px;
             }
 
             #navbar li a {
                 text-decoration:none;
                 text-shadow: 1px 1px #999;
-                font-size:18px;
-                font-family: 'lobster', serif;
+                font-size:16px;
+                font-family: 'Mothproof', serif;
                 letter-spacing: 5px;
                 color:#000;
-                font-weight:400;
+                font-weight:100;
             }
 
             #navbar li a:hover {
                 color:#11b00f;
-                text-shadow: 1px 1px #11b00f;
+                text-shadow: 1px 1px 5px #11b00f;
             }
 
             #main {
