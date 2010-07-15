@@ -1,4 +1,4 @@
-//http://ejohn.org/blog/html5-shiv/
+//Inspired from John Resig's post : http://ejohn.org/blog/html5-shiv/
 
 ( function(document) {
     var elements = ["header","nav","figure","footer","aside","article","section"];
