@@ -8,7 +8,11 @@ class Controller_Index extends Beedon_Controller_Abstract{
 
     function ie6(){
         $this->setViewFile("_common/ie6");
-        //this will compile index/index.tpl
     }
+
+    function beta(){
+        $this->setViewFile("_common/beta");
+    }
+
 
 }
