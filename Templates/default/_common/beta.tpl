@@ -29,6 +29,9 @@
         }
 
 
+        .clear {
+            clear:both;
+        }
 
         .center {
             width:960px;
@@ -39,6 +42,7 @@
             position:relative;
             background-position:center 0;
             height:164px;
+            padding:0 1px;
         }
         
         #header #slogan {
@@ -68,8 +72,10 @@
             min-height:515px;
             height:auto !important;
             height:515px;
-            width:958px;
-
+            width:960px;
+            background:#FFFFFF;
+            border-left:1px solid #BBB;
+            border-right:1px solid #BBB;
         }
 
         #content #leftBlock {
@@ -86,6 +92,7 @@
         #content .article {
             background:#FFF;
             width:698px;
+            margin-left:1px;
         }
 
         #content .article .title {
@@ -94,7 +101,6 @@
             top:0;
             left:-40px;
             background:yellow;
-            color:red;
         }
 
         #content .article div {
@@ -131,7 +137,8 @@
             background:#000 url('/github/beedon/Templates/default/_static/img/footer.jpg') no-repeat center 0;
             height:119px;
             border-left:1px solid #BBB;
-            width:956px;
+            border-right:1px solid #BBB;
+            width:960px;
 
         }
         #footer {
@@ -180,11 +187,12 @@
                 </div> <!-- .article -->
                 {/section}
 
-            </div> <! -- #leftBlock -->
+            </div> <!-- #leftBlock -->
 
             <div id="rightBlock">
                 Burası da sag
             </div>
+            <div class="clear"></div>
         </div>
     </div>
    
