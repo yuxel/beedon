@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
-
-        <title>Eksigator</title>
-
+        <title>Osman Yüksel</title>
         <meta charset="utf-8" />
-
         <link rel="stylesheet" href="http://beedon.org/beta/Templates/default/_static/css/reset.css" media="screen" type="text/css" />
-        {literal}
+        
+    {literal}
 
     <style>
 
@@ -72,13 +68,13 @@
             min-height:515px;
             height:auto !important;
             height:515px;
+            width:958px;
 
         }
 
         #content #leftBlock {
-            width:700px;
+            width:698px;
             float:left;
-            background:#CCC;
         }
         
         #content #rightBlock {
@@ -90,12 +86,10 @@
         #content .article {
             background:#FFF;
             width:698px;
-            border:1px solid red;
         }
 
         #content .article .title {
             margin-top:20px;
-            border:2px solid green;
             position:relative;
             top:0;
             left:-40px;
@@ -159,29 +153,34 @@
     <div id="contentWrapper"> 
         <div id="content" class="center">
             <div id="leftBlock">
+
+                {section name=foo start=0 loop=10 step=1}
                 <div class="article">
                     <div class="title"> 
                         <div class="date">  
                             23 mart
-                        </div>
+                        </div> <!-- .date -->
 
                         <div class="titleText">
                             Buraya baslik
-                        </div>
+                        </div> <!-- .titleText -->
 
                         <div class="comments">
-                        </div>
+                        </div> <!-- .comments -->
                     
                         <div style="clear:both"></div>
                     </div>
                     <span>
 
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
-
-
+                        Lorem ipsum dolor sit amet, 
+                        onsectetuer adipiscing elit, 
+                        sed diam nonummy nibh euismod tincidunt 
+                        ut laoreet dolore magna aliquam erat volutpat
                     </span>
-                </div>    
-            </div>
+                </div> <!-- .article -->
+                {/section}
+
+            </div> <! -- #leftBlock -->
 
             <div id="rightBlock">
                 Burası da sag
