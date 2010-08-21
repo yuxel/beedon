@@ -6,10 +6,9 @@ ini_set("display_errors",true);
 
 define("APP_PATH", dirname(__FILE__));
 
-include_once("Beedon/AutoLoader.php");
+include_once("Bee/AutoLoader.php");
 
-
-$bootstrap = new Beedon_Bootstrap();
+$bootstrap = new Bee_Bootstrap();
 
 $bootstrap->initModel()
           ->initView()

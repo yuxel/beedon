@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Index extends Beedon_Controller_Abstract{
+class Controller_Index extends Bee_Controller_Abstract{
     function index(){
         $this->setViewFile("_common/index");
         //this will compile index/index.tpl

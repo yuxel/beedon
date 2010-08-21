@@ -2,10 +2,10 @@
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 
 /**
- * View Interface for Beedon
+ * View Interface for Bee
  *
  */
-interface Beedon_View_Interface
+interface Bee_View_Interface
 {
     /**
      * Fetch template data with assigned variables

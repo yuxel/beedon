@@ -4,7 +4,7 @@
 /**
  * Singleton Abstract class
  */
-abstract class Beedon_Common_Singleton_Abstract{
+abstract class Bee_Common_Singleton_Abstract{
     private static $_instance;
 
     abstract protected function __construct();

@@ -4,14 +4,14 @@
 /**
  * Factory class to set model
  */
-class Beedon_Model{
+class Bee_Model{
 
     /**
      * Load related engine
      *
      */
     public static function factory($modelEngine) {
-        $model = "Beedon_Model_Engines_$modelEngine";
+        $model = "Bee_Model_Engines_$modelEngine";
         return new $model;
     }
 

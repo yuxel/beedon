@@ -10,7 +10,7 @@
  *  Model_Abraka_Dabra_Truba will include Model/Abraka/Dabra/Truba.php
  */
 
-class Beedon_AutoLoader{
+class Bee_AutoLoader{
 
     private static $_instance;
     private $_externalSources = array();
@@ -86,4 +86,4 @@ class Beedon_AutoLoader{
 
 }
 
-$autoLoader = Beedon_AutoLoader::getInstance();
+$autoLoader = Bee_AutoLoader::getInstance();

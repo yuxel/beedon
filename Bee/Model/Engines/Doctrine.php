@@ -1,9 +1,9 @@
 <?php
 
-class Beedon_Model_Engines_Doctrine {
+class Bee_Model_Engines_Doctrine {
 
     function __construct(){
-        $autoLoader = Beedon_AutoLoader::getInstance();
+        $autoLoader = Bee_AutoLoader::getInstance();
         
         $autoLoader->addExternalSource("Doctrine", Config_Model::ENGINE_PATH);
         $autoLoader->addNewHandler(array('Doctrine', 'autoload'));

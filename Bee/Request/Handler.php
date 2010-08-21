@@ -4,7 +4,7 @@
 /**
  * Request handler
  */
-class Beedon_Request_Handler{
+class Bee_Request_Handler{
     
     private $_splitted;
     private $_parameters;
