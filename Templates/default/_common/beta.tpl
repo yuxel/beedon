@@ -122,7 +122,7 @@
             margin-top:20px;
             position:relative;
             top:0;
-            left:-16px;
+            left:-17px;
             padding-bottom:7px;
             color:red;
             height:31px;
