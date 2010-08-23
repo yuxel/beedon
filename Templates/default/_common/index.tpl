@@ -246,71 +246,71 @@
 
             }        
 
-            .article .header h1 {
-                height:31px;
-                line-height:31px;
-                background:#f1f1f1;
-                background:transparent;
-                color:#4E4E4E;
-                text-shadow:0px 0px 4px #777777;
-                font-size:18px;
-                float:left;
-                display:block;
-                padding-left:10px;
-            }
-            
-            .article .header .dateTime {
-                float:left;
-                font-weight:bold;
-                width:107px;
-                color:#FFFFFF;
-                text-shadow: 2px 2px 3px black;
-                text-align:center;
-                line-height:31px;
-            }
+        .article .header h1 {
+            height:31px;
+            line-height:31px;
+            background:#f1f1f1;
+            background:transparent;
+            color:#4E4E4E;
+            text-shadow:0px 0px 4px #777777;
+            font-size:18px;
+            float:left;
+            display:block;
+            padding-left:10px;
+        }
+        
+        .article .header .dateTime {
+            float:left;
+            font-weight:bold;
+            width:107px;
+            color:#FFFFFF;
+            text-shadow: 2px 2px 3px black;
+            text-align:center;
+            line-height:31px;
+        }
 
-            .article .header .comments{
-                height:38px;
-                float:right;
-                font-size:20px;
-                font-weight:bold;
-                padding-top:14px;
-            }
+        .article .header .comments{
+            height:38px;
+            float:right;
+            font-size:20px;
+            font-weight:bold;
+            padding-top:14px;
+        }
 
-            .article .header .comments .commentText{
-                display:none;
-            }
- 
-
-
-            .articleSprite {
-                background:url('/github/beedon/Templates/default/_static/img/articleSprite.png') no-repeat 0 0;
-                width:100px;
-                text-align:center;
-                margin-top:-45px;
-                color:#444444;
-                font-size:18px;
-                padding-bottom:20px;
-            }
+        .article .header .comments .commentText{
+            display:none;
+        }
 
 
-            .article .content {
-                text-align:justify;
-                line-height:20px;
-                padding-bottom:20px;
-            }
 
-            .article .content img {
-                padding:3px 10px 3px 0;
-            }
+        .articleSprite {
+            background:url('/github/beedon/Templates/default/_static/img/articleSprite.png') no-repeat 0 0;
+            width:100px;
+            text-align:center;
+            margin-top:-45px;
+            color:#444444;
+            font-size:18px;
+            padding-bottom:20px;
+        }
 
-        </style>
-        {/literal}
 
-    </head>
-    <body>
-        <div id="headerWrapper">
-            <header id="header" class="sprite marginCentered">
+        .article .content {
+            text-align:justify;
+            line-height:20px;
+            padding-bottom:20px;
+        }
+
+        .article .content img {
+            padding:3px 10px 3px 0;
+        }
+
+    </style>
+    {/literal}
+
+</head>
+<body>
+    <div id="headerWrapper">
+        <header id="header" class="sprite marginCentered">
                 <section id="sloganWrapper">
                     Can't stop learning!
                 </section>
