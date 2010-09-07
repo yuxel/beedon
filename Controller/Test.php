@@ -3,6 +3,22 @@
 class Controller_Test extends Bee_Controller_Abstract{
     //this will run when called test/index
     function index(){
+        $userService = new Service_User();
+
+
+        $userToLog = new User();
+        $userToLog->username = "yuxel";
+        $userToLog->password = "foo";
+
+        $login = $userService->login($userToLog);
+
+        if ( $login == false ) {
+            $userService->register($userToLog);
+        }
+
+        var_dump($login);
+    
+
         $parameters = $this->getParameters();
         $this->view->assign("someVariable",$parameters);
     }
