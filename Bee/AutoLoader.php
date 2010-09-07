@@ -14,7 +14,6 @@ class Bee_AutoLoader{
 
     private static $_instance;
     private $_externalSources = array();
-    private $_externalSourcesKeys = array();
     private $_classSeparator = "_";
     private $_dirSeparator   = "/";
     private $_extension      = ".php";
@@ -60,19 +59,8 @@ class Bee_AutoLoader{
             $requirePath   = $filepath . $this->_extension;
         }
 
-        //determine file will be required or handled by another source
-        $requireFile = true;
 
-        foreach($this->_externalSourcesKeys as $sourceKey){
-            $strpos = strpos($className, $sourceKey);
-            if ( $className != $sourceKey && $strpos > -1 ) {
-                //let it be handled by another external source
-                $requireFile = false;
-                break;
-            }
-        }
-
-        if ( $requireFile ) {
+        if( file_exists($requirePath)) {
             require_once($requirePath);
         }
     }
@@ -83,7 +71,6 @@ class Bee_AutoLoader{
      */
     function addExternalSource($className, $path){
         $this->_externalSources[$className] = $path;
-        $this->_externalSourcesKeys = array_keys($this->_externalSources);
     }
 
     /**
