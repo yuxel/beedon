@@ -17,8 +17,20 @@ body {
         background-position:center 0;
         height:164px;
         padding:0 1px;
-
     }
+
+
+        #headerWrapper  header a.logo{
+            display:block;
+
+            margin-left:15px;
+            width:230px;
+            height:130px;
+
+            white-space:nowrap;
+            text-indent:-9999px;
+            overflow:hidden;
+        }
 
         #headerWrapper header section {
             text-align:center;
@@ -29,7 +41,7 @@ body {
             line-height:40px;
             width:300px;
             height:40px;
-            position:relative;
+            position:absolute;
             top:10px;
             left:500px;
         }

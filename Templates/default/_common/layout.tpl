@@ -12,39 +12,22 @@
     <body>
         <div id="headerWrapper">
             <header class="center">
-                <section> Burası slogan </section>
-                <nav>Link1  Link 2</nav>
+                <a class="logo" href="{$_root}">
+                    Osman Yuksel :: Blog
+                </a>
+                <section> 
+                    Burası slogan 
+                </section>
+                <nav>
+                    Link1  Link 2
+                </nav>
             </header>
         </div>
 
         <div id="contentWrapper"> 
             <div id="content" class="center">
                 <aside id="leftBlock">
-                    {section name=foo start=10 loop=26 step=2}  
-                    <article>
-                        <a class="title"> 
-                            <div class="date">  
-                                23 mart
-                            </div>
-
-                            <div class="titleText">
-                                Buraya baslik
-                            </div>
-
-                            <div class="comments">
-                                <em>
-                                    9
-                                </em>
-                            </div>
-                        </a>
-                        <span>
-                            dolore magna aliquam erat volutpat
-                            dolore magna aliquam erat
-                            dolore magna aliquam erat
-                            dolore magna aliquam erat
-                        </span>
-                    </article> <!-- article -->
-                    {/section}
+                    {$content}
                 </aside> <!-- leftBlock -->
 
                 <aside id="rightBlock">

@@ -1,6 +1,5 @@
-{foreach from=$latestArticles item=article}
 <article>
-    <a class="title" href="{$_root}/article/{$article->url}"> 
+    <a class="title"> 
         <div class="date">{$article->time|date_format:"%e %B"}</div>
         <div class="titleText">{$article->title}</div>
         <div class="comments">
@@ -11,6 +10,3 @@
         {$article->text}
     </span>
 </article> <!-- article -->
-{/foreach}
-
-TODO: Pagination

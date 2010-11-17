@@ -48,7 +48,7 @@
             text-shadow: 2px 2px 3px black;
             text-align:center;
             padding:5px 0 0 10px;
-            width:97px;
+            width:115px;
         } 
 
         #content article a.title .comments {
@@ -69,7 +69,7 @@
                 margin-left:13px;
                 line-height:15px;
                 text-align:center;
-                color: #BBB;
+                color: #000;
                 font-weight:bold;
             }
 
