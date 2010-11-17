@@ -8,6 +8,8 @@ class Bee_Request_Handler{
     
     private $_splitted;
     private $_parameters;
+    private $_responseType = "html";
+
 
     function __construct(){
         $this->_splitUri();         
@@ -55,6 +57,10 @@ class Bee_Request_Handler{
         return $controller;
     }
 
+    function getResponseType(){
+        return $this->_responseType;
+    }
+
     /**
      * return name of action
      * fallback to default action
@@ -69,7 +75,16 @@ class Bee_Request_Handler{
         if(!$action){
             $action = Config_Application::DEFAULT_ACTION;
         }
-        return $action;
+
+
+        $actionResponse = explode(".", $action);
+
+
+        if ( isset($actionResponse[1]) ) {
+            $this->_responseType = $actionResponse[1];
+        }
+
+        return $actionResponse[0];
     }
 
 
@@ -99,9 +114,15 @@ class Bee_Request_Handler{
     /**
      * get specific parameter
      */
-    function getParameter($key){
+    function getParameter($key, $defaultValue = null){
         $params = $this->getParameters(); //lazy load
-        $parameter = isset($params[$key]) ? $params[$key] : null;
+        $parameter = isset($params[$key]) ? $params[$key] : $defaultValue;
+
+
+        if ( is_array($parameter) ) {
+            $parameter = (object) $parameter;
+        }
+
 
         return $parameter;
     }
@@ -117,7 +138,7 @@ class Bee_Request_Handler{
         $action = $this->getAction();
 
         $controllerClass = "Controller_" . ucfirst($controller);
-        $actionMethod = strtolower($action);
+        $actionMethod = $action;
 
         if(class_exists($controllerClass)) {
             $controllerObject = new $controllerClass;

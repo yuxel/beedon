@@ -11,11 +11,12 @@ abstract class Bee_Common_Singleton_Abstract{
 
     public static function getInstance() 
     {
-        if (!isset(self::$_instance)) {
-            $thisClass = get_called_class();
-            self::$_instance = new $thisClass;
+        $thisClass = get_called_class();
+
+        if (!isset(self::$_instance[$thisClass])) {
+            self::$_instance[$thisClass] = new $thisClass;
         }
 
-        return self::$_instance;
+        return self::$_instance[$thisClass];
     }
 }

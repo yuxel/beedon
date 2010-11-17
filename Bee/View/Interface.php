@@ -26,4 +26,10 @@ interface Bee_View_Interface
      * return template dir path
      */
     public function getTemplatesDir();
+
+    /**
+     * get assigned variables
+     */
+    public function getAssignedVariables();
+
 }

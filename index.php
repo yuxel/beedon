@@ -10,7 +10,7 @@ include_once("Bee/AutoLoader.php");
 
 $bootstrap = new Bee_Bootstrap();
 
-$bootstrap->initModel()
+$bootstrap->initSession()
+          ->initModel()
           ->initView()
           ->initController();
-

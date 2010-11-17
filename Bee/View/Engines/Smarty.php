@@ -69,4 +69,11 @@ class Bee_View_Engines_Smarty extends
         return $this->engine->template_dir;
     }
 
+    /**
+     * Get assigned variables 
+     */
+    function getAssignedVariables(){
+        return $this->engine->get_template_vars();
+    } 
+
 }
