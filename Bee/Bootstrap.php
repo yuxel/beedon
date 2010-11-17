@@ -95,7 +95,9 @@ class Bee_Bootstrap{
         $controller->setRequestHandler($requestHandler);
         $controller->setView($this->_view);
 
+        $controller->preDispatch();
         call_user_func(array($controller, $action), $actionArgs);
+        $controller->postDispatch();
 
         $controller->renderView();
 

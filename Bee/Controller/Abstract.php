@@ -143,6 +143,7 @@ abstract class Bee_Controller_Abstract{
         return $this->admin($caller);
     }
 
-    //this should be implemented on all controllers
-    abstract function index();
+    function preDispatch(){}
+    function postDispatch(){}
+    function index(){}
 }
