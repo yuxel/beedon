@@ -22,7 +22,6 @@ class Bee_Bootstrap{
         $this->_templatesDir = $this->_fileRoot . "/Templates/";
         $this->_templateDir = $this->_templatesDir . $this->_currentTheme;
         $this->_staticPath = $this->_templateDir . "/_static";
-        $this->_langDir = $this->_fileRootAbsPrefix . $this->_templateDir . "/_lang";
         $this->_uri = $_SERVER['REQUEST_URI'];
         $explode = explode("?",$this->_uri);
         $this->_currentUrl = $explode[0];
@@ -57,48 +56,14 @@ class Bee_Bootstrap{
     }
 
     /**
-     * Init translator
-     */
-    public function initTranslator(){
-
-        $changeLang = $this->_requestHandler->getParameter("_lang");
-
-        $session = Bee_Session::getInstance()->setNamespace("lang");
-
-        if ( $changeLang ) {
-            $session->set("current",$changeLang);
-        }
-
-
-        if( isset($session->get()->current) ){
-            $this->_currentLang = $session->get()->current;
-        }
-        else {
-            $this->_currentLang = "en";
-        }
-
-
-        
-
-        $file = $this->_langDir ."/" . $this->_currentLang . ".php";
-        include_once($file);
-        $this->_lang = $_lang;
-
-        return $this;
-    }
-
-    /**
      * Init View
      */
     public function initView() {
         $this->_view = Bee_View::factory(Config_View::ENGINE);
-        $this->_view->assign("_l", $this->_lang);
         $this->_view->assign("_staticPath", $this->_staticPath);
         $this->_view->assign("_root",$this->_fileWebRoot);
         $this->_view->assign("_uri",$this->_uri);
         $this->_view->assign("_currentUrl",$this->_currentUrl);
-        $this->_view->assign("_currentLang",$this->_currentLang);
-        $this->_view->assign("_languages",Enum_Datas::getLanguages());
 
         $userData = Bee_Session::getInstance()->setNamespace("user")->get();
         $this->_view->assign("_userData", $userData);
