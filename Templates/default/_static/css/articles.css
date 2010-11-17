@@ -1,0 +1,75 @@
+#content article {
+    background:#FFF;
+    width:698px;
+    margin-bottom:10px;
+}
+
+    #content article div { /* ie fix */
+        position:relative;
+    }
+
+    #content article span {
+        line-height: 19px;
+        padding:0 85px 0 15px;
+        display:block;
+    } 
+
+
+    #content article a.title {
+        display:block;
+        background:transparent url('../img/leftCaption.gif') no-repeat 0 0;
+        position:relative;
+        top:0;
+        left:-16px;
+        padding-bottom:7px;
+        height:31px;
+
+    }
+
+        #content article a.title .titleText {
+            background:#f1f1f1;
+            height:31px;
+            float:left;
+            width:550px;
+
+            line-height:30px;
+            color:#4E4E4E;
+            text-shadow:0px 0px 4px #777777;
+            font-size:18px;
+            float:left;
+            display:block;
+            padding-left:10px;
+        } 
+
+        #content article a.title .date {
+            float:left;
+            font-weight:bold;
+            color:#FFFFFF;
+            text-shadow: 2px 2px 3px black;
+            text-align:center;
+            padding:5px 0 0 10px;
+            width:97px;
+        } 
+
+        #content article a.title .comments {
+            background:url('../img/commentBubble.png') no-repeat center 0;
+            float:right;
+            height:55px;
+            width:55px;
+            position:absolute;
+            right:-10px;
+            top:-15px;
+        } 
+
+            #content article a.title .comments em{
+                display:block;
+                width:30px;
+                height:15px;
+                margin-top:20px;
+                margin-left:13px;
+                line-height:15px;
+                text-align:center;
+                color: #BBB;
+                font-weight:bold;
+            }
+

@@ -1,0 +1,26 @@
+/* bring html5 to ie6 */
+header, nav, article, footer, section, figure, aside {  
+        display: block;  
+}  
+
+.toLeft {
+    float:left;
+}
+
+.toRight {
+    float:right;
+}
+
+
+.clear {
+    clear:both;
+}
+
+.center {
+    width:960px;
+    margin:0 auto;
+}
+
+a {
+    cursor:pointer;
+}

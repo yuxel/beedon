@@ -1,0 +1,101 @@
+body {
+    background:#FFFFFF url('../img/bg.jpg') repeat-x 0 164px;
+    height:100%;
+    font-family:Verdana,Arial,Geneva,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:20px;
+}
+
+/** Header **/
+#headerWrapper {
+    background-color:#020703;
+}
+
+    #headerWrapper  header {
+        background:url('../img/sprite.jpg') no-repeat 0 0;
+        position:relative;
+        background-position:center 0;
+        height:164px;
+        padding:0 1px;
+
+    }
+
+        #headerWrapper header section {
+            text-align:center;
+            text-shadow: 1px 1px #EEE;
+            font-size:16px;
+            letter-spacing: 0.3em;
+            color:433333;
+            line-height:40px;
+            width:300px;
+            height:40px;
+            position:relative;
+            top:10px;
+            left:500px;
+        }
+
+        #headerWrapper header nav {
+            width:600px;
+            height:25px;
+            position:absolute;
+            top:120px;
+            right:40px;
+        }
+
+/** End of Header */
+
+/** Middle Content */
+#contentWrapper {
+    background:url('../img/sprite.jpg') no-repeat 0 0;
+    background-position:center -161px;
+}
+
+    #content {
+        border-left:1px solid #BBB;
+        border-right:1px solid #BBB;
+        min-height:515px;
+        height:auto !important;
+        height:515px;
+        background:#FFFFFF;
+    }
+
+        #content #leftBlock {
+            width:700px;
+            float:left;
+        }
+        
+        #content #rightBlock {
+            width:250px;
+            float:right;
+            background:#DDD;
+        }
+
+/* End of middle content */
+
+/* Footer */
+#footerTop {
+    background:#000 url('../img/footer.jpg') no-repeat center 0;
+    height:119px;
+    border-left:1px solid #BBB;
+    border-right:1px solid #BBB;
+    width:960px;
+
+}
+
+#footerWrapper {
+    background:#090b0a;
+    color:#FFFFFF;
+}
+
+    #footerWrapper footer .footerSide {
+        width:300px;
+        margin:0 8px;
+    }
+
+
+        #footerWrapper footer .footerSide h3 {
+            text-align:center;
+            border-bottom:1px dotted #FFF;
+        }
+
+/* End of footer */
