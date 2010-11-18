@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Index extends Bee_Controller_Abstract{
+class Controller_Index extends App_ControllerBase{
 
     function __construct(){
         $this->articleService = new Service_Article();
