@@ -64,14 +64,15 @@
         } 
 
             #content article a.title .comments em{
-                display:block;
-                width:30px;
-                height:15px;
+                display: block;
+                width: 30px;
+                height: 15px;
                 margin-top:20px;
-                margin-left:13px;
+                margin-left:12px;
                 line-height:15px;
                 text-align:center;
                 color: #000;
+                text-shadow: 1px 1px 10px #28db00; /* green */
                 font-weight:bold;
             }
 
