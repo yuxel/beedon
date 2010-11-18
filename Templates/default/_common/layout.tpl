@@ -2,7 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>{$_layoutConstants->header->title}</title>
+        <title>
+            {$_layoutConstants->header->globalTitle}
+            {if $_layoutConstants->header->title}
+                | {$_layoutConstants->header->title}
+            {/if}
+        </title>
         <script src="{$_staticPath}/js/html5.js"></script>
         <link rel="stylesheet" href="{$_staticPath}/css/reset.css" />
         <link rel="stylesheet" href="{$_staticPath}/css/generic.css" />

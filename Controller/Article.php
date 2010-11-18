@@ -10,5 +10,6 @@ class Controller_Article extends App_ControllerBase{
         $url = end(array_keys($this->getParameters()));
         $article = $this->articleService->getArticleByUrl($url);
         $this->view->assign("article", $article);
+        $this->_setPageTitle($article->title);
     }
 }
