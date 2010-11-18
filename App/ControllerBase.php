@@ -13,7 +13,7 @@ class App_ControllerBase extends Bee_Controller_Abstract{
     }
 
     function setLayoutConstants(){
-        $this->view->assign("layoutConstants", $this->getLayoutConstants());
+        $this->view->assign("_layoutConstants", $this->getLayoutConstants());
     }
 
     function postDispatch(){

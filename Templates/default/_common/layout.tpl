@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Eksigator</title>
+        <title>{$_layoutConstants->header->title}</title>
         <script src="{$_staticPath}/js/html5.js"></script>
         <link rel="stylesheet" href="{$_staticPath}/css/reset.css" />
         <link rel="stylesheet" href="{$_staticPath}/css/generic.css" />
@@ -16,7 +16,7 @@
                     Osman Yuksel :: Blog
                 </a>
                 <section> 
-                    Burası slogan 
+                    {$_layoutConstants->header->slogan}
                 </section>
                 <nav>
                     Link1  Link 2
@@ -44,14 +44,14 @@
                 <aside class="footerSide toLeft">    
                     <h3>Behind the site</h3>
                     <span>
-                        Some text about site
+                        {$_layoutConstants->footer->behindTheSite}
                     </span>
                 </aside>
 
                 <aside class="footerSide toLeft">
                     <h3>Some good sites</h3>
                     <span>
-                        Some text other sites
+                        {$_layoutConstants->footer->goodSites}
                     </span>
                 </aside>
 
@@ -59,7 +59,7 @@
 
                     <h3>About author</h3>
                     <span>
-                        Some text about author
+                        {$_layoutConstants->footer->aboutAuthor}
                     </span>
 
                 </aside>
