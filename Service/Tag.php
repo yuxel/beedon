@@ -14,11 +14,15 @@ class Service_Tag{
     /**
      * Get tags from string seperated with commas
      */
-    public function getActiveTagsFromString($string){
+    public function getActiveTagsFromIds($string){
+        $ids = explode(",", $string);
+        $ids = Util_Array::filterNumbers($ids);
+
         $q = Doctrine_Query::create()
              ->select('t.*')
              ->from('Tag t')
-             ->where("t.status = 'active'");
+             ->where("t.status = 'active'")
+             ->andWhereIn("t.id", $ids);
 
         $tags = $q->execute()->toArray();
         $tags = Util_Doctrine::toObject($tags);

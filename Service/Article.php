@@ -23,7 +23,7 @@ class Service_Article{
         $article->url = $cleanUrl . "-" . $article->id;
         $article->sender = $this->userService->getActiveUserById($article->senderId);
         $article->commentCount = $this->commentService->getAllActiveCommentCount($article->id, "article");
-        $article->tags = $this->tagService->getActiveTagsFromString($article->tags);
+        $article->tags = $this->tagService->getActiveTagsFromIds($article->tags);
 
         unset($article->status);
     }
