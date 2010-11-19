@@ -16,6 +16,10 @@ header, nav, article, footer, section, figure, aside {
     clear:both;
 }
 
+.hidden {
+    display:none;
+}
+
 .center {
     width:960px;
     margin:0 auto;

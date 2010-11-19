@@ -1,7 +1,9 @@
 #content article {
+    position:relative;
     background:#FFF;
     width:698px;
     margin-bottom:10px;
+    padding-bottom:10px;
 }
 
     #content article div { /* ie fix */
@@ -75,4 +77,29 @@
                 text-shadow: 1px 1px 10px #28db00; /* green */
                 font-weight:bold;
             }
+
+
+    #content article ul.tags {
+        position:absolute;
+        bottom:0px;
+        right:50px;
+        padding:0 10px;
+    } 
+
+    #content article ul.tags li {
+        float:right;
+        margin-left:10px;
+    }
+
+
+    #content article ul.tags li a{
+        font-size:9px;
+        text-decoration:none;
+        text-shadow: 1px 1px 4px #999; /* gray */
+        color:#BBB; /* gray */
+    }
+
+    #content article ul.tags li a:hover {
+        text-shadow: 1px 1px 10px #28db00; /* green */
+    }
 

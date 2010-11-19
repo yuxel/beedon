@@ -9,13 +9,15 @@
     </a>
 
     <ul class="tags">
-        <li class="hidden"></li>
         {foreach from=$article->tags item=tag}
             <li>
-                <a href="{$tag->link}">{$tag->tag}</a>
+                <a href="{$_root}/article/tag/{$tag->link}">#{$tag->tag}</a>
             </li>
         {/foreach} 
+        <li class="clear"></li>
     </ul>
+    <div class="clear"></div>
+
 
     <span>
         {if $article->contentPreview}
@@ -25,6 +27,8 @@
             {$article->content}
         {/if}
     </span>
+
+
 </article> <!-- article -->
 {/foreach}
 
