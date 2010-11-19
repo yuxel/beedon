@@ -95,7 +95,11 @@ body {
         #content #rightBlock {
             width:250px;
             float:right;
-            background:#DDD;
+        }
+
+        #content #rightBlock .handmade {
+            display:block;
+            text-align:center;
         }
 
 /* End of middle content */

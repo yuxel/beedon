@@ -36,7 +36,9 @@
                 </aside> <!-- leftBlock -->
 
                 <aside id="rightBlock">
-                    Burası da sag
+                    <a class="handmade">
+                        <img src="{$_staticPath}/img/handmade.jpg">
+                    </a>
                 </aside>
                 <div class="clear"></div>
             </div> <!-- #content -->
