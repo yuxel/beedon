@@ -5,9 +5,10 @@ class App_ControllerBase extends Bee_Controller_Abstract{
 
     private function _setLayoutConstants(){
         $this->constants = new StdClass();
-        $this->constants->header->globalTitle = "Burasu başlık";
-        $this->constants->header->slogan = "Bu slogan";
-        $this->constants->footer->behindTheSite = "Burası behind the site";
+        $this->constants->header->slogan = "Can't stop learning!";
+        $this->constants->header->globalTitle = "Osman Yuksel | ";
+        $this->constants->header->globalTitle .= $this->constants->header->slogan;
+        $this->constants->footer->behindTheSite = "Beedon, php, html5, css3, jquery";
         $this->constants->footer->goodSites = array("site1", "site2");
         $this->constants->footer->aboutAuthor = "Burası da benim hakımda sayfası";
     }
@@ -16,7 +17,6 @@ class App_ControllerBase extends Bee_Controller_Abstract{
         $this->view->assign("_layoutConstants", $this->constants);
     }
 
-
     function preDispatch(){
         $this->_setLayoutConstants();
     }
@@ -24,9 +24,6 @@ class App_ControllerBase extends Bee_Controller_Abstract{
     protected function _setPageTitle($title){
         $this->constants->header->title = $title;
     }
-
-
-
 
     function postDispatch(){
         $this->_assignLayoutConstants();
