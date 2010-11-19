@@ -7,6 +7,16 @@
             <em>{$article->commentCount}</em>
         </div>
     </a>
+
+    <ul class="tags">
+        <li class="hidden"></li>
+        {foreach from=$article->tags item=tag}
+            <li>
+                <a href="{$tag->link}">{$tag->tag}</a>
+            </li>
+        {/foreach} 
+    </ul>
+
     <span>
         {if $article->contentPreview}
             {$article->contentPreview} 

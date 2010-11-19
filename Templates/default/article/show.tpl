@@ -10,3 +10,10 @@
         {$article->content}
     </span>
 </article> <!-- article -->
+
+<section class="comments">
+    {foreach from=$article->comments->comments item=comment}
+        {$comment|@var_dump}
+    {/foreach}
+</section>
+

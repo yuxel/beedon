@@ -7,6 +7,7 @@
  * 
  * @property integer $id
  * @property string $tag
+ * @property string $link
  * @property enum $status
  * 
  * @package    ##PACKAGE##
@@ -28,6 +29,15 @@ abstract class BaseTag extends Doctrine_Record
              'autoincrement' => true,
              ));
         $this->hasColumn('tag', 'string', 250, array(
+             'type' => 'string',
+             'length' => 250,
+             'fixed' => false,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             ));
+        $this->hasColumn('link', 'string', 250, array(
              'type' => 'string',
              'length' => 250,
              'fixed' => false,

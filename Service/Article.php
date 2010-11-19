@@ -4,11 +4,13 @@ class Service_Article{
 
     public function __construct(){
         $this->articleTable = ArticleTable::getInstance();
+        $this->userService = new Service_User(); //TODO: singleton
+        $this->tagService = new Service_Tag(); //TODO: singleton
+        $this->commentService = new Service_Comment(); //TODO: singleton
     }
 
 
     public function getAllActiveArticlesCount(){
-
         $articleCount = $this->articleTable
                              ->findByStatus('active')
                              ->count();
@@ -16,12 +18,12 @@ class Service_Article{
         return $articleCount;
     }
 
-    private function _populateArticle($article){
+    private function _filterArticle($article){
         $cleanUrl = Util_String::toUrl($article->title);
         $article->url = $cleanUrl . "-" . $article->id;
-        $article->sender = ""; //TODO
-        $article->commentCount = "10"; //TODO
-        $article->tags = ""; //TODO
+        $article->sender = $this->userService->getActiveUserById($article->senderId);
+        $article->commentCount = $this->commentService->getAllActiveCommentCount($article->id, "article");
+        $article->tags = $this->tagService->getActiveTagsFromString($article->tags);
 
         unset($article->status);
     }
@@ -31,7 +33,7 @@ class Service_Article{
         $articleData = $this->articleTable->findOneById($id)->getData();
         $articleData = (object) $articleData;
 
-        $this->_populateArticle($articleData);
+        $this->_filterArticle($articleData);
         return $articleData;
     }
 
@@ -64,7 +66,7 @@ class Service_Article{
         $articles = Util_Doctrine::toObject($results);
 
         foreach($articles as $article){
-            $this->_populateArticle($article);
+            $this->_filterArticle($article);
         }
 
 
@@ -85,7 +87,11 @@ class Service_Article{
         $id = (int) end($urlData);
 
         $article = $this->getArticleById($id);
+
+        $limit = 9999;
+        $offset = 0;
+        $article->comments = $this->commentService
+                                  ->getActiveComments($article->id, 'article', $limit, $offset);
         return $article;
     }
-
 }

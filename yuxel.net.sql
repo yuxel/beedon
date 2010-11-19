@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `article` (
 CREATE TABLE IF NOT EXISTS `tag` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `tag` varchar(250) NOT NULL,
+  `link` varchar(250) NOT NULL,
   `status` enum('active','passive','deleted') NOT NULL DEFAULT 'active',
   PRIMARY KEY (`id`)
 );
