@@ -111,6 +111,10 @@ class Bee_Request_Handler{
         return $this->_parameters;
     }
 
+    function getParametersAsArray(){
+        return $this->_splitted;
+    }
+
     /**
      * get specific parameter
      */

@@ -46,7 +46,10 @@ abstract class Bee_Controller_Abstract{
      */
     function getParameters(){
         return $this->requestHandler->getParameters();
+    }
 
+    function getParametersAsArray(){
+        return $this->requestHandler->getParametersAsArray();
     }
     
     /**
