@@ -4,7 +4,23 @@ body {
     font-family:Verdana,Arial,Geneva,Helvetica,sans-serif;
     font-size:12px;
     line-height:20px;
+    position:relative;
 }
+
+
+#forkMe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:149px;
+    height:149px;
+    background:url(../img/forkMe.png);
+
+    white-space:nowrap;
+    text-indent:-9999px;
+    overflow:hidden;
+}
+
 
 /** Header **/
 #headerWrapper {
