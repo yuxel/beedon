@@ -28,3 +28,7 @@ header, nav, article, footer, section, figure, aside {
 a {
     cursor:pointer;
 }
+
+em {
+    font-style:italic;
+}

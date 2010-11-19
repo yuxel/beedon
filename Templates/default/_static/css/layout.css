@@ -113,17 +113,47 @@ body {
 #footerWrapper {
     background:#090b0a;
     color:#FFFFFF;
+    padding-bottom:10px;
 }
 
     #footerWrapper footer .footerSide {
         width:300px;
         margin:0 8px;
+        color:#BBB;
+        text-shadow:0px 0px 4px #777777;
+        font-size:12px;
+    }
+
+
+    #footerWrapper footer .footerSide a{
+        text-decoration:none;
+        font-weight:bold;
+        color:#6fa460; /* green */
+    }
+
+    #footerWrapper footer .footerSide em{
+        color:#6fa460; /* green */
+        text-shadow:1px 1px 10px #6fa460; /* green */
+        font-style:normal;
+    }
+
+    #footerWrapper footer .footerSide.aboutAuthor {
+        width:600px;
     }
 
 
         #footerWrapper footer .footerSide h3 {
+            text-shadow:3px 3px 10px #000;
             text-align:center;
             border-bottom:1px dotted #FFF;
+            margin-bottom:10px;
         }
+
+        #footerWrapper footer .footerSide.aboutAuthor img{
+            padding-left:10px;
+            float:right;
+        }
+
+
 
 /* End of footer */
