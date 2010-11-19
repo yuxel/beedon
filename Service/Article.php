@@ -1,38 +1,90 @@
 <?php
 
 class Service_Article{
+
+    public function __construct(){
+        $this->articleTable = ArticleTable::getInstance();
+    }
+
+
+    public function getAllActiveArticlesCount(){
+
+        $articleCount = $this->articleTable
+                             ->findByStatus('active')
+                             ->count();
+
+        return $articleCount;
+    }
+
+    private function _populateArticle($article){
+        $cleanUrl = Util_String::toUrl($article->title);
+        $article->url = $cleanUrl . "-" . $article->id;
+        $article->sender = ""; //TODO
+        $article->commentCount = "10"; //TODO
+        $article->tags = ""; //TODO
+
+        unset($article->status);
+    }
+
+    public function getArticleById($id){
+
+        $articleData = $this->articleTable->findOneById($id)->getData();
+        $articleData = (object) $articleData;
+
+        $this->_populateArticle($articleData);
+        return $articleData;
+    }
+
     public function getLatestActiveArticles($limit=20, $offset=0){
+        $articleCount = $this->getAllActiveArticlesCount();
 
-        $articles = array();
+        //TODO : handle max offset, limit etc
+        if($offset < 0){
+            $offset = 0;
+        }
+        else if($offset > $articleCount){
+            $offset = $articleCount;
+        }
 
-        $article = new StdClass();
-        $article->id = 1;
-        $article->sender = 1; //TODO: get userData
-        $article->title = "Bu başlık";
-        $article->text = "Burası da içerik";
-        $article->url = "burasi-da-icerik-".$article->id;
-        $article->time = time();
-        $article->commentCount = 10;
-        $article->status = "active";
-        $article->tags = array("1"=>"Deneme",
-                               "2"=>"Falan",
-                               "4"=>"Molan");
+        if(($limit + $offset) > $articleCount){
+            //$offset = $articleCount;
+        }
 
-        $articles[] = $article;
-        $articles[] = $article;
-        $articles[] = $article;
-        $articles[] = $article;
+        $q = Doctrine_Query::create()
+             ->select('a.*')
+             ->from('Article a')
+             ->where("a.status = 'active'")
+             ->orderBy("a.timeAdded desc")
+             ->limit($limit)
+             ->offset($offset);
 
-        return $articles;
+
+
+        $results = $q->execute()->toArray();
+        $articles = Util_Doctrine::toObject($results);
+
+        foreach($articles as $article){
+            $this->_populateArticle($article);
+        }
+
+
+
+        $pagination = array("limit"=>$limit,
+                            "offset"=>$offset,
+                            "total" => $articleCount);
+
+        $result = new StdClass();
+        $result->articles = $articles;
+        $result->pagination = $pagination;
+
+        return $result;
     }
 
     public function getArticleByUrl($url){
         $urlData = explode("-", $url);
         $id = (int) end($urlData);
 
-        $articles = $this->getLatestActiveArticles();
-        $article = end($articles);
-
+        $article = $this->getArticleById($id);
         return $article;
     }
 
