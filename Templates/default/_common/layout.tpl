@@ -24,7 +24,11 @@
                     {$_layoutConstants->header->slogan}
                 </section>
                 <nav>
-                    Link1  Link 2
+                    Blog ,
+                    Projects ,
+                    About This Blog ,
+                    About Author ,
+                    Contact
                 </nav>
             </header>
         </div>
