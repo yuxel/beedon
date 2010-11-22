@@ -2,17 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>
-            {$_layoutConstants->header->globalTitle}
-            {if $_layoutConstants->header->title}
+        <title>{$_layoutConstants->header->globalTitle}{if $_layoutConstants->header->title}
                 | {$_layoutConstants->header->title}
-            {/if}
-        </title>
+            {/if}</title>
         <script src="{$_staticPath}/js/html5.js"></script>
-        <link rel="stylesheet" href="{$_staticPath}/css/reset.css" />
-        <link rel="stylesheet" href="{$_staticPath}/css/generic.css" />
-        <link rel="stylesheet" href="{$_staticPath}/css/layout.css" />
-        <link rel="stylesheet" href="{$_staticPath}/css/articles.css" />
+        <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/generic.css" />
+        <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/articles.css" />
     </head>
     <body>
         <div id="headerWrapper">
@@ -56,7 +53,7 @@
             </footer>
         </div> <!-- #footerWrapper -->
 
-        <a id="forkMe" href="https://github.com/yuxel/beedon/tree/yuxel.net" target="blank">
+        <a id="forkMe" href="http://github.com/yuxel/beedon/tree/yuxel.net" target="blank">
             Fork me on GitHub
         </a>
 

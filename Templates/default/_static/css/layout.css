@@ -53,7 +53,7 @@ body {
             text-shadow: 1px 1px #EEE;
             font-size:16px;
             letter-spacing: 0.3em;
-            color:433333;
+            color:#433333;
             line-height:40px;
             width:300px;
             height:40px;
@@ -126,6 +126,7 @@ body {
         color:#BBB;
         text-shadow:0px 0px 4px #777777;
         font-size:12px;
+        float:left;
     }
 
 
@@ -150,14 +151,42 @@ body {
 
     #footerWrapper footer .footerSide.aboutAuthor {
         width:600px;
+        float:right;
     }
+
+        #footerWrapper footer .footerSide.behindTheSite .validators a {
+            white-space:nowrap;
+            text-indent:-9999px;
+            overflow:hidden;
+
+            display:block;
+            width:96px;
+            height:29px;
+            background:url(../img/validators.jpg) no-repeat;
+
+            float:left;
+            margin:10px 10px 0 0;
+        }
+
+
+        #footerWrapper footer .footerSide.behindTheSite .validators a.css3 {
+            background-position:-103px 0;
+
+
+        }
+
+
+
+        #footerWrapper footer .footerSide.behindTheSite section a {
+
+        }
 
 
         #footerWrapper footer .footerSide h3 {
             text-shadow:3px 3px 10px #000;
             text-align:center;
             border-bottom:1px dotted #FFF;
-            margin-bottom:10px;
+            margin:10px 0;
         }
 
         #footerWrapper footer .footerSide.aboutAuthor img{
