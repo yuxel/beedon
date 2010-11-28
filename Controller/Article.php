@@ -13,4 +13,7 @@ class Controller_Article extends App_ControllerBase{
         $this->view->assign("article", $article);
         $this->_setPageTitle($article->title);
     }
+
+    function admin($callee){
+    }
 }

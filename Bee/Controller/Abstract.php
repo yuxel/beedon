@@ -6,6 +6,7 @@
  */
 abstract class Bee_Controller_Abstract{
     private $_viewFile = null;
+    private $_viewEnabled = true;
 
     /**
      * Set view accessible in controller
@@ -64,6 +65,10 @@ abstract class Bee_Controller_Abstract{
      * Render related file
      */
     function renderView(){
+
+        if(!$this->_viewEnabled){
+            return false;
+        }
 
         //users can assign _viewFile
         //if so render _viewFile
@@ -140,6 +145,11 @@ abstract class Bee_Controller_Abstract{
      */
     function setViewFile($fileName){
         $this->_viewFile = $fileName;
+    }
+
+
+    function disableRender(){
+        $this->_viewEnabled = false;
     }
 
     function callAdminMethod($caller){
