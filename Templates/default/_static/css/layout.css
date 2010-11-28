@@ -49,6 +49,7 @@ body {
         }
 
         #headerWrapper header section {
+            font-family:"Lobster", Verdana;
             text-align:center;
             text-shadow: 1px 1px #EEE;
             font-size:16px;
@@ -63,11 +64,63 @@ body {
         }
 
         #headerWrapper header nav {
-            width:600px;
-            height:25px;
             position:absolute;
-            top:120px;
+            top:118px;
             right:40px;
+        }
+
+
+        #headerWrapper header nav a {
+            background:url('../img/menuSprite.jpg') no-repeat 0 0;
+            white-space:nowrap;
+            text-indent:-9999px;
+            overflow:hidden;
+
+            display:block;
+            float:left;
+            height:30px;
+            margin-right:50px;
+        }
+
+        #headerWrapper header nav a.blog {
+            width:70px;
+        }
+
+        #headerWrapper header nav a.blog:hover {
+            background-position:0 -30px;
+        }
+
+
+        #headerWrapper header nav a.projects {
+            width:150px;
+            background-position:-78px 0;
+        }
+
+
+        #headerWrapper header nav a.projects:hover {
+            background-position:-78px -30px;
+        }
+
+
+        #headerWrapper header nav a.about {
+            width:95px;
+            background-position:-230px 0;
+        }
+
+        #headerWrapper header nav a.about:hover {
+            background-position:-230px -30px;
+        }
+
+
+        #headerWrapper header nav a.contact {
+            width:130px;
+            background-position:-334px 0;
+            margin-right:0px;
+        }
+
+
+        #headerWrapper header nav a.contact:hover {
+            background-position:-334px -30px;
         }
 
 /** End of Header */

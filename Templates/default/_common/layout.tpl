@@ -6,6 +6,11 @@
                 | {$_layoutConstants->header->title}
             {/if}</title>
         <script src="{$_staticPath}/js/html5.js"></script>
+
+
+ <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/reset.css" />
         <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/generic.css" />
         <link rel="stylesheet" type="text/css" href="{$_staticPath}/css/layout.css" />
@@ -21,11 +26,10 @@
                     {$_layoutConstants->header->slogan}
                 </section>
                 <nav>
-                    Blog ,
-                    Projects ,
-                    About This Blog ,
-                    About Author ,
-                    Contact
+                    <a class="blog" href="{$_root}">Blog</a>
+                    <a class="projects" href="{$_root}/page/projects">Projects</a>
+                    <a class="about" href="{$_root}/page/about">About</a>
+                    <a class="contact" href="{$_root}/contact">Contact</a>
                 </nav>
             </header>
         </div>
@@ -53,7 +57,7 @@
             </footer>
         </div> <!-- #footerWrapper -->
 
-        <a id="forkMe" class="hidden" href="http://github.com/yuxel/beedon/tree/yuxel.net" target="blank">
+        <a id="forkMe" href="http://github.com/yuxel/beedon/tree/yuxel.net" target="blank">
             Fork me on GitHub
         </a>
 

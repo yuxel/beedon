@@ -13,7 +13,9 @@
         <a href="http://debian.org" class="debian" target="blank">Debian</a> 
         (the universal operating system),
         <a href="http://www.vim.org/" target="blank">Vim</a> 
-        (the editor). <br/><br/>
+        and 
+        <a href="http://www.gimp.org/" target="blank">Gimp</a> . <br/><br/>
+
 
         FBI Warning!!! <br/>
         This blog can become <em>'schizophrenic'</em> in somehow!
