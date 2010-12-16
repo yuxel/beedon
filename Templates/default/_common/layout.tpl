@@ -18,7 +18,7 @@
     </head>
     <body>
         <div id="headerWrapper">
-            <header class="center">
+            <header>
                 <a class="logo" href="{$_root}">
                     Osman Yuksel :: Blog
                 </a>
@@ -27,6 +27,7 @@
                 </section>
                 <nav>
                     <a class="blog" href="{$_root}">Blog</a>
+                    <a class="articles" href="{$_root}">Articles</a>
                     <a class="projects" href="{$_root}/page/projects">Projects</a>
                     <a class="about" href="{$_root}/page/about">About</a>
                     <a class="contact" href="{$_root}/contact">Contact</a>

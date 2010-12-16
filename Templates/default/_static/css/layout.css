@@ -14,7 +14,7 @@ body {
     left:0;
     width:149px;
     height:149px;
-    background:url(../img/forkMe.png);
+    background:url(../img/forkMe.gif);
 
     white-space:nowrap;
     text-indent:-9999px;
@@ -28,10 +28,11 @@ body {
 }
 
     #headerWrapper  header {
-        background:url('../img/header.jpg') no-repeat 0 0;
+        width:960px;
+        margin:0 auto;
+        background:url('../img/header.jpg') no-repeat 0 bottom;
         position:relative;
-        background-position:center 0;
-        height:164px;
+        height:160px;
     }
 
 
@@ -40,7 +41,7 @@ body {
 
             margin-left:15px;
             width:230px;
-            height:130px;
+            height:140px;
 
             white-space:nowrap;
             text-indent:-9999px;
@@ -64,8 +65,8 @@ body {
 
         #headerWrapper header nav {
             position:absolute;
-            top:118px;
-            right:40px;
+            top:112px;
+            right:20px;
         }
 
 
@@ -78,55 +79,64 @@ body {
             display:block;
             float:left;
             height:30px;
-            margin-right:50px;
+            margin-right:20px;
         }
 
         #headerWrapper header nav a.blog {
-            width:70px;
+            width:50px;
         }
 
         #headerWrapper header nav a.blog:hover {
-            background-position:0 -30px;
+            background-position:0 -33px;
         }
 
 
+        #headerWrapper header nav a.articles {
+            width:75px;
+            background-position:-70px 0;
+        }
+
+
+        #headerWrapper header nav a.articles:hover {
+            background-position:-70px -33px;
+        }
+
         #headerWrapper header nav a.projects {
-            width:150px;
-            background-position:-78px 0;
+            width:75px;
+            background-position:-170px 0;
         }
 
 
         #headerWrapper header nav a.projects:hover {
-            background-position:-78px -30px;
+            background-position:-170px -33px;
         }
 
-
         #headerWrapper header nav a.about {
-            width:95px;
-            background-position:-230px 0;
+            width:55px;
+            background-position:-268px 0;
         }
 
         #headerWrapper header nav a.about:hover {
-            background-position:-230px -30px;
+            background-position:-268px -33px;
         }
 
 
         #headerWrapper header nav a.contact {
-            width:130px;
-            background-position:-334px 0;
+            width:78px;
+            background-position:-348px 0;
             margin-right:0px;
         }
 
 
         #headerWrapper header nav a.contact:hover {
-            background-position:-334px -30px;
+            background-position:-348px -33px;
         }
 
 /** End of Header */
 
 /** Middle Content */
 #contentWrapper {
-    background:url('../img/contentBg.jpg') no-repeat 50% 3px;
+    background:url('../img/contentBg.jpg') no-repeat 50% 0px;
 }
 
     #content {
