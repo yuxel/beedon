@@ -30,11 +30,15 @@ class Service_Article{
 
     public function getArticleById($id){
 
-        $articleData = $this->articleTable->findOneById($id)->getData();
-        $articleData = (object) $articleData;
+        $articleData = $this->articleTable->findOneById($id);
+        
+        if($articleData){
+            $articleData = $articleData->getData();
+            $articleData = (object) $articleData;
 
-        $this->_filterArticle($articleData);
-        return $articleData;
+            $this->_filterArticle($articleData);
+            return $articleData;
+        }
     }
 
     public function getLatestActiveArticles($limit=20, $offset=0){
@@ -88,10 +92,12 @@ class Service_Article{
 
         $article = $this->getArticleById($id);
 
-        $limit = 9999;
-        $offset = 0;
-        $article->comments = $this->commentService
-                                  ->getActiveComments($article->id, 'article', $limit, $offset);
-        return $article;
+        if($article){
+            $limit = 9999;
+            $offset = 0;
+            $article->comments = $this->commentService
+                                      ->getActiveComments($article->id, 'article', $limit, $offset);
+            return $article;
+        }
     }
 }
